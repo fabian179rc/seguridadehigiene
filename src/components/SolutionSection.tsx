@@ -9,8 +9,7 @@ export function SolutionSection() {
             LA SOLUCIÓN DEFINITIVA
           </span>
           <h2 className="font-heading md:text-5xl font-extrabold text-white mb-8 max-w-4xl mx-auto text-[28px] leading-tight">
-            Transformá tu semana docente de improvisación constante a
-            planificación resuelta
+            LA SOLUCIÓN QUE ESPERABAS — UN SISTEMA TODO EN UNO
           </h2>
         </div>
 
@@ -32,13 +31,11 @@ export function SolutionSection() {
           className="mb-12 bg-white rounded-3xl p-8 md:p-12 shadow-2xl max-w-3xl mx-auto border-4 border-[#f5c842]/20">
           
           <h3 className="text-3xl md:text-5xl font-extrabold text-[#1a2e5a] mb-6">
-            La Agenda del Nivel Inicial
+            Sistema Maestro de Capacitaciones HyS
           </h3>
 
           <p className="text-slate-700 font-medium text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-            El sistema completo de planificaciones y recursos para ahorrar horas
-            de trabajo y resolver tu práctica docente con más orden y claridad
-            desde el primer día.
+            Un sistema completo de 150 páginas con las 52 semanas del año resueltas, más 5 volúmenes de herramientas operativas listas para usar desde el primer día. Sin software. Sin cursos largos. Sin improvisar.
           </p>
         </motion.div>
       </div>

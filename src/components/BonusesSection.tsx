@@ -3,36 +3,36 @@ import { motion } from 'framer-motion';
 const bonuses = [
 {
   num: 1,
-  title: 'El Rescate de Actividades para Todo el Año',
-  desc: 'Banco de actividades listas para resolver cualquier clase en minutos.',
+  title: 'Registro Maestro de Evidencia Legal',
+  desc: 'Formularios de asistencia con validez legal, certificados, actas de entrega. El blindaje administrativo completo.',
   image: "/b1.webp"
 
 },
 {
   num: 2,
-  title: 'Efemérides Resueltas sin Estrés',
-  desc: 'Propuestas concretas para cada fecha especial del calendario escolar.',
+  title: 'Banco de Evaluación y Control de Aprendizaje',
+  desc: 'Cuestionarios para los 52 temas, grilla de respuestas, planillas de seguimiento. Demostrá el impacto real.',
   image: "/b2.webp"
 
 },
 {
   num: 3,
-  title: 'Informes y Registros que Sí Dan Ganas de Usar',
-  desc: 'Modelos listos para documentar sin perder horas redactando.',
+  title: 'Guía de Dinámicas y Talleres In-Situ',
+  desc: '25 dinámicas grupales y ejercicios prácticos. Rompehielos técnicos, actividades de percepción de riesgos.',
   image: "/b3.webp"
 
 },
 {
   num: 4,
-  title: 'La Agenda Invisible de la Docente Organizada',
-  desc: 'Planillas y checklists para bajar la carga mental y ordenar la semana.',
+  title: 'Cronogramas de Gestión y Tableros de Control',
+  desc: 'Plantillas mes a mes, matrices de seguimiento, tableros de KPIs. El cerebro organizacional de tu consultoría.',
   image: "/b4.webp"
 
 },
 {
   num: 5,
-  title: 'Imprimibles que Te Salvan la Semana',
-  desc: 'Recursos visuales listos para imprimir y usar de inmediato en sala.',
+  title: 'Kit de Material Didáctico Visual y Señalética',
+  desc: 'Infografías técnicas, folletos de bolsillo, carteles, ayuda-memorias. El toque profesional desde el día 1.',
   image: "/b5.webp"
 
 }];
@@ -43,10 +43,10 @@ export function BonusesSection() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-12">
           <h2 className="font-heading font-extrabold text-[#1a2e5a] text-3xl md:text-5xl leading-tight mb-4">
-            Material Complementario
+            5 BONOS INCLUIDOS
           </h2>
           <p className="text-xl md:text-2xl text-slate-600 font-bold">
-            Y además, te llevás estos Bonos Exclusivos
+            Y además, recibís 5 bonos de lujo
           </p>
         </div>
 

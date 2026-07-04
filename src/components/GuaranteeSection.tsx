@@ -9,19 +9,16 @@ export function GuaranteeSection() {
             Garantía Total de 7 Días
           </h2>
           <p className="text-2xl font-bold text-[#1a2e5a]/80">
-            Probá el sistema sin ningún riesgo
+            Te entregamos exactamente lo que prometemos
           </p>
         </div>
 
         <div className="bg-white border border-slate-200 rounded-3xl p-10 md:p-12 shadow-sm">
           <p className="text-slate-600 leading-relaxed text-lg mb-8">
-            Tenés 7 días completos para revisar todo el material y comprobar que
-            es justo lo que te prometimos. Si lo que recibís no corresponde con
-            lo que prometemos, te devolvemos el 100% de tu dinero, sin vueltas y
-            sin formularios complicados.
+            Tenés 7 días completos para revisar todo el material y comprobar que es justo lo que te prometimos: un sistema completo con las 52 semanas del año resueltas, listo para implementar desde el primer día. Si lo que recibís no se corresponde con lo que prometemos, te devolvemos el 100% de tu dinero, sin vueltas y sin formularios complicados. Así de simple: cumplimos o te lo reintegramos.
           </p>
           <div className="inline-flex bg-[#10b981]/10 px-6 py-3 rounded-full border border-[#10b981]/20 text-[#10b981] font-bold text-lg shadow-sm">
-            Tu Inversión Está 100% Protegida
+            Riesgo Cero Garantizado
           </div>
         </div>
       </div>

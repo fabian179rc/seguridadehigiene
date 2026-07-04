@@ -3,24 +3,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 const faqs = [
 {
-  q: '¿Es un producto físico o digital?',
-  a: 'Es 100% digital. Recibís acceso inmediato por email para descargar y usar desde cualquier dispositivo.'
+  q: '¿Es en papel o digital?',
+  a: 'Es un producto 100% digital. Recibís todos los módulos de forma inmediata en tu correo electrónico, con el manual principal, los 5 bonos y todo el material listo para usar e imprimir.'
 },
 {
-  q: '¿Necesito experiencia previa?',
-  a: 'No. Está pensado para docentes con experiencia, practicantes y estudiantes que recién empiezan.'
+  q: '¿Necesito experiencia previa para usarlo?',
+  a: 'No. El sistema incluye el Capítulo 1 dedicado exclusivamente a explicarte cómo usar todo sin improvisar. En menos de una hora ya vas a saber exactamente qué usar, cuándo y cómo adaptarlo a cada cliente.'
 },
 {
-  q: '¿Sirve para todas las salas?',
-  a: 'Sí. Incluye recursos para sala de 18 meses, 2 años y 3 años.'
+  q: '¿Sirve para profesionales de cualquier provincia de Argentina?',
+  a: 'Sí. Todo el contenido está basado en la normativa nacional vigente (Ley 19.587, Decreto 351 y resoluciones SRT) aplicable en todo el territorio argentino.'
 },
 {
-  q: '¿Sirve si ya tengo materiales armados?',
-  a: 'Perfecto. Todo está diseñado para complementar y mejorar lo que ya tenés.'
+  q: '¿Qué pasa si ya tengo algunas capacitaciones armadas?',
+  a: 'El sistema se complementa con lo que ya tenés. No reemplaza tu trabajo: lo organiza, lo completa y lo eleva de nivel. Podés incorporar tus materiales al sistema y tener todo en un solo lugar.'
 },
 {
-  q: '¿Sirve para docentes de cualquier provincia?',
-  a: 'Sí. Pensado para nivel inicial de toda Argentina.'
+  q: '¿Cuándo recibo el material?',
+  a: 'De forma inmediata. Apenas confirmada la compra, recibís el acceso completo en tu correo electrónico. En menos de 5 minutos ya podés estar revisando el sistema.'
 }];
 
 export function FaqSection() {

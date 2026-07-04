@@ -4,9 +4,9 @@ import { Landing } from './pages/Landing';
 import { useScreenInit } from './useScreenInit';
 const META_PIXEL_ID = '1313826143661679';
 const PAGE_TITLE =
-'La Agenda del Nivel Inicial — Sistema Completo para la Docente de Nivel Inicial';
+'Sistema Maestro de Capacitaciones HyS — Sistema Completo para Profesionales de Higiene y Seguridad';
 const PAGE_DESC =
-'Planificaciones, actividades, efemérides, informes y recursos listos para usar desde el primer día. Todo lo que necesitás para planificar, organizar y resolver tu trabajo docente de nivel inicial.';
+'52 semanas de capacitaciones listas para implementar. Presentaciones, evaluaciones, registros, certificados y cronogramas listos para usar desde el primer día. Sin preparar desde cero. Sin improvisar.';
 const HERO_IMAGE = "/mockup.webp";
 
 const SITE_URL = 'https://nivel-inicial.impultienda.ar';

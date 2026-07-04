@@ -2,24 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const features = [
 {
-  icon: '⏱️',
-  title: 'Ahorro de Tiempo Real',
-  desc: 'Planificaciones y recursos listos para adaptar y usar en minutos.'
+  icon: '📖',
+  title: 'Capacitaciones Profesionales Sin Preparación Extra',
+  desc: 'Presentaciones completas, evaluaciones y registros listos para cada tema. Llegás a la empresa y arrancás.'
 },
 {
-  icon: '👶',
-  title: 'Actividades Listas por Sala y Edad',
-  desc: 'Propuestas organizadas para 18 meses, 2 años y 3 años.'
+  icon: '⚖️',
+  title: 'Cumplimiento Legal Real',
+  desc: 'Documentación completa y organizada para trabajar con total respaldo ante inspecciones, auditorías y la ART.'
 },
 {
-  icon: '📋',
-  title: 'Orden Docente Sostenible',
-  desc: 'Todo organizado y accesible cuando más lo necesitás.'
+  icon: '🗓️',
+  title: 'Control Total del Año',
+  desc: 'Las 52 semanas planificadas, cada capacitación registrada, cada certificado generado. Sin baches ni sorpresas.'
 },
 {
-  icon: '📝',
-  title: 'Informes sin Bloqueo',
-  desc: 'Modelos listos para completar en minutos, no en horas.'
+  icon: '🕊️',
+  title: 'Tranquilidad Profesional',
+  desc: 'Dejá de crear material desde cero y dedicá ese tiempo a conseguir y atender más clientes.'
 }];
 
 export function FeaturesSection() {

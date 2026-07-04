@@ -2,24 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const benefits = [
 {
-  emoji: '🚀',
-  title: 'Planificación Resuelta desde el Día 1',
-  desc: 'Abrís el material, encontrás lo que necesitás y en minutos está listo.'
+  emoji: '�',
+  title: 'Capacitaciones al Día, Todo el Año',
+  desc: 'Cada semana tiene su material completo, su evaluación lista y su registro firmado. Sin preparación de último momento ni papeles perdidos.'
 },
 {
-  emoji: '😊',
-  title: 'Fin de los Domingos con Angustia',
-  desc: 'Cuando el material está listo, la semana empieza con calma.'
+  emoji: '📈',
+  title: 'Control Profesional Real',
+  desc: 'Sabés exactamente qué capacitaste en cada empresa, qué está pendiente y qué vence el mes que viene. Sin sorpresas de la SRT ni de la ART.'
 },
 {
-  emoji: '💪',
-  title: 'Docente Segura y Respaldada',
-  desc: 'Cada actividad tiene su base. Cada informe tiene su estructura.'
+  emoji: '🕊️',
+  title: 'Tranquilidad Mental',
+  desc: 'Se terminó la sensación de que "algo siempre falta". Tu año de capacitaciones tiene sistema y vos podés enfocarte en lo que realmente importa: atender más empresas y crecer.'
 },
 {
   emoji: '❤️',
-  title: 'Menos Desgaste, Más Vocación',
-  desc: 'Enfocate en enseñar y acompañar, no en administrar y buscar.'
+  title: 'Profesionalismo Visible',
+  desc: 'Cada capacitación tiene su presentación. Cada asistente tiene su registro firmado. Cada tema tiene su evaluación. Así se construye una carrera sólida y sin exposición legal.'
 }];
 
 export function BenefitsSection() {
@@ -28,10 +28,10 @@ export function BenefitsSection() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-white mb-6 leading-tight max-w-4xl mx-auto">
-            EL IMPACTO REAL EN TU PRÁCTICA DOCENTE
+            LO QUE VA A CAMBIAR
           </h2>
           <p className="text-xl md:text-2xl text-[#f9d6e3] font-medium max-w-2xl mx-auto">
-            Esto es lo que realmente vas a lograr implementando La Agenda.
+            Lo que va a cambiar en tu gestión profesional desde la primera semana
           </p>
         </div>
 

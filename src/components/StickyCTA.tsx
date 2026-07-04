@@ -59,7 +59,7 @@ export function StickyCTA() {
             }}
             className="inline-flex items-center justify-center gap-2 bg-[#f5c842] hover:bg-[#e5b832] text-[#1a2e5a] font-extrabold text-base px-8 py-4 rounded-full shadow-2xl shadow-[#1a2e5a]/20 border-2 border-white/50 transition-colors">
             
-              🚀 QUIERO LA AGENDA
+              🚀 QUIERO EL SISTEMA MAESTRO
             </motion.a>
           </div>
         </motion.div>

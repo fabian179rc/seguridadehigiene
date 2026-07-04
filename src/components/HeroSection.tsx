@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { scrollToOffer } from '../utils/scrollToOffer';
 export function HeroSection() {
   return (
-    <section className="relative md:pt-16 md:pb-24 overflow-hidden bg-white pt-[30px] pb-[30px]">
+    <section className="relative md:pt-0 md:pb-24 overflow-hidden bg-white pt-0 pb-[30px]">
       <div
         aria-hidden="true"
         className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none">
@@ -11,7 +11,7 @@ export function HeroSection() {
         <div className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] rounded-full bg-[#f5c842]/10 blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 max-w-[1100px] text-center">
+      <div className="container mx-auto px-4 relative z-10 max-w-[1100px] text-center pt-0">
         <motion.div
           initial={{
             opacity: 0,
@@ -24,9 +24,9 @@ export function HeroSection() {
           transition={{
             duration: 0.5
           }}
-          className="inline-flex items-center gap-2 px-6 py-2.5 mb-8 rounded-full border border-[#1a2e5a]/10 bg-[#f8f8f8] text-[#1a2e5a] font-bold tracking-[0.1em] uppercase text-[10px] md:text-[12px]">
+          className="inline-flex items-center gap-2 px-6 py-2.5 mb-8 rounded-full border border-[#1a2e5a]/10 bg-[#f8f8f8] text-[#1a2e5a] font-bold tracking-[0.1em] uppercase text-[10px] md:text-[12px] mt-0">
           
-          ✨ EL SISTEMA COMPLETO PARA LA DOCENTE DE NIVEL INICIAL
+          ✨ SISTEMA COMPLETO PARA PROFESIONALES DE HIGIENE Y SEGURIDAD
         </motion.div>
 
         <motion.h2
@@ -44,9 +44,9 @@ export function HeroSection() {
           }}
           className="font-heading md:text-5xl mb-6 max-w-3xl mx-auto text-[30px] font-extrabold leading-tight text-[#1a2e5a]">
           
-          Planificaciones, actividades y recursos{' '}
+          52 semanas de capacitaciones{' '}
           <span className="inline-block px-3 py-0.5 rounded-lg -rotate-1 text-[#FF6B35] bg-[#00000]">
-            listos para usar.
+            listas para implementar.
           </span>
         </motion.h2>
 
@@ -92,8 +92,7 @@ export function HeroSection() {
           }}
           className="md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto text-[16px] font-medium">
           
-          El sistema completo de planificaciones y recursos para ahorrar tiempo,
-          organizarte mejor y resolver tu trabajo docente desde el primer día.
+          Presentaciones, evaluaciones, registros, certificados y cronogramas listos para usar desde el primer día. Sin preparar desde cero. Sin improvisar.
         </motion.p>
 
         <motion.div

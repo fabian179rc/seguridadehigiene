@@ -3,39 +3,69 @@ import { motion } from 'framer-motion';
 const modules = [
 {
   num: '01',
-  emoji: '📘',
-  title: 'El Inicio del Camino',
-  desc: 'Adaptación, diagnóstico inicial y reuniones con familias.'
+  emoji: '�',
+  title: 'Antes de Arrancar: Cómo Usar el Sistema Sin Improvisar',
+  desc: 'La metodología completa para adaptar el sistema a cualquier empresa. El mapa de implementación anual.'
 },
 {
   num: '02',
-  emoji: '👶',
-  title: 'Pequeños Exploradores',
-  desc: 'Planificaciones y actividades completas para sala de 18 meses.'
+  emoji: '🗓️',
+  title: 'Diagnóstico, Inducción y Cultura Preventiva',
+  desc: 'Semanas 1-4. El primer mes define si los trabajadores se toman en serio la seguridad. Material completo para arrancar con autoridad.'
 },
 {
   num: '03',
-  emoji: '🌍',
-  title: 'Descubriendo el Mundo',
-  desc: 'Recursos listos para aplicar en sala de 2 años.'
+  emoji: '⚡',
+  title: 'Riesgos Críticos que No Admiten Improvisación',
+  desc: 'Semanas 5-10. Trabajo en altura, riesgo eléctrico, espacios confinados. Los temas donde la ART mira más de cerca.'
 },
 {
   num: '04',
-  emoji: '🚀',
-  title: 'Primeros Pasos a la Autonomía',
-  desc: 'Propuestas y planificaciones completas para sala de 3 años.'
+  emoji: '🔧',
+  title: 'Operación Segura de Equipos, Vehículos y Energía',
+  desc: 'Semanas 11-16. Máquinas, autoelevadores, bloqueo y etiquetado. Material listo para exponer cada uno.'
 },
 {
   num: '05',
-  emoji: '📅',
-  title: 'El Calendario Escolar',
-  desc: 'Efemérides, actos y fechas especiales resueltos para todo el año.'
+  emoji: '🚨',
+  title: 'Emergencias, Primeros Auxilios y Respuesta',
+  desc: 'Semanas 17-22. Los primeros minutos definen el resultado. Capacitaciones que preparan para actuar, no paralizarse.'
 },
 {
   num: '06',
-  emoji: '📝',
-  title: 'El Registro Pedagógico',
-  desc: 'Informes, seguimiento y documentación docente lista para usar.'
+  emoji: '🏃',
+  title: 'Ergonomía, Salud Ocupacional y Bienestar',
+  desc: 'Semanas 23-28. Las lesiones músculo-esqueléticas son prevenibles. Capacitaciones correctas hacen la diferencia.'
+},
+{
+  num: '07',
+  emoji: '⚗️',
+  title: 'Sustancias Químicas, Ambiente y Exposición',
+  desc: 'Semanas 29-34. Desde lectura de hojas de seguridad hasta manejo correcto de productos peligrosos.'
+},
+{
+  num: '08',
+  emoji: '🏭',
+  title: 'Capacitación Adaptable por Rubro y Tarea',
+  desc: 'Semanas 35-40. Material adaptado para construcción, logística, industria alimentaria, oficinas, salud.'
+},
+{
+  num: '09',
+  emoji: '⚖️',
+  title: 'Cumplimiento Legal, Documentación y Auditorías',
+  desc: 'Semanas 41-46. La diferencia entre trabajar tranquilo y transpirar frío en una inspección.'
+},
+{
+  num: '10',
+  emoji: '📊',
+  title: 'Cierre Anual, Medición de Eficacia y Mejora',
+  desc: 'Semanas 47-52. El año no termina con la última capacitación. Termina cuando demostrás que funcionó.'
+},
+{
+  num: '11',
+  emoji: '📈',
+  title: 'Después de Semana 52: Sostener y Escalar',
+  desc: 'Completar el año es un logro. Sostenerlo es un negocio. Acá aprendés cómo escalar tu cartera de clientes.'
 }];
 
 export function ModulesSection() {
@@ -44,10 +74,10 @@ export function ModulesSection() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-12">
           <h2 className="font-heading font-extrabold text-[#1a2e5a] text-4xl md:text-5xl leading-tight mb-4">
-            EL NÚCLEO DE LA AGENDA
+            11 CAPÍTULOS INCLUIDOS
           </h2>
           <p className="text-xl md:text-2xl text-slate-600 font-bold">
-            6 Tomos Completos Listos para Usar
+            Todo el sistema en 11 capítulos listos para implementar
           </p>
         </div>
 
@@ -76,7 +106,7 @@ export function ModulesSection() {
                   {m.emoji}
                 </div>
                 <span className="text-sm font-bold tracking-[0.15em] uppercase text-[#f5c842] bg-[#1a2e5a] px-3 py-1.5 rounded-lg">
-                  Tomo {m.num}
+                  Cap {m.num}
                 </span>
               </div>
               <div>

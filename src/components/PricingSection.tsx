@@ -54,25 +54,24 @@ export function PricingSection() {
       
       <div className="container mx-auto px-4 max-w-2xl text-center relative z-10">
         <span className="inline-block px-6 py-2.5 mb-6 rounded-full border border-[#1a2e5a]/10 bg-[#f8f8f8] text-[#1a2e5a] font-bold tracking-[0.1em] uppercase text-xs">
-          OFERTA ESPECIAL DE LANZAMIENTO
+          OFERTA ESPECIAL — SISTEMA COMPLETO
         </span>
 
         <h2 className="font-heading text-2xl md:text-3xl font-medium text-slate-600 leading-tight mb-8">
-          Todo lo que necesitás para resolver tu planificación docente, por una
-          fracción de su valor real.
+          Accedé al sistema ahora y empezá el cambio hoy mismo
         </h2>
 
         <h3 className="text-3xl md:text-5xl font-extrabold text-[#1a2e5a] mb-12">
-          La Agenda del Nivel Inicial
+          Sistema Maestro de Capacitaciones HyS
         </h3>
 
         <div className="relative inline-block mb-8 w-full max-w-md mx-auto">
           <div className="bg-[#1a2e5a] rounded-3xl p-10 shadow-2xl border-4 border-[#f5c842]/30">
             <h4 className="text-3xl font-extrabold text-white mb-2">
-              La Agenda del
+              Sistema Maestro de
             </h4>
             <h4 className="text-4xl font-extrabold text-[#f5c842]">
-              Nivel Inicial
+              Capacitaciones HyS
             </h4>
           </div>
           <div className="absolute -top-4 -right-4 md:-top-6 md:-right-6 w-28 h-28 md:w-32 md:h-32 flex items-center justify-center">
@@ -93,18 +92,18 @@ export function PricingSection() {
         
         <div className="bg-[#f8f8f8] rounded-3xl shadow-xl border border-slate-200 p-8 md:p-10 text-center">
           <div className="text-slate-500 text-lg md:text-xl mb-4 font-medium">
-            <span className="line-through">Valor Real: $49.900 ARS</span>
+            <span className="line-through">Precio Normal: ARS 75.490</span>
           </div>
 
           <div className="inline-flex items-center gap-2 bg-[#1a2e5a] text-[#f5c842] font-bold px-6 py-3 rounded-full text-sm mb-6 shadow-md">
-            <Flame className="w-5 h-5" /> OFERTA POR TIEMPO LIMITADO
+            <Flame className="w-5 h-5" /> 73% OFF — OFERTA DE LANZAMIENTO
           </div>
 
           <div className="font-heading text-6xl md:text-7xl font-extrabold text-[#1a2e5a] leading-none mb-4">
-            $19.990
+            ARS 19.990
           </div>
           <p className="text-slate-600 font-medium text-base mb-8">
-            Pago único. Acceso para siempre.
+            Pagás una sola vez. Acceso para siempre.
           </p>
 
           <div className="flex justify-center gap-4 mb-8">
@@ -134,14 +133,16 @@ export function PricingSection() {
             className="flex items-center justify-center gap-3 w-full bg-[#f5c842] hover:bg-[#e5b832] text-[#1a2e5a] font-extrabold text-lg md:text-xl px-8 py-6 rounded-xl shadow-lg shadow-[#f5c842]/30 transition-colors mb-6">
             
             <span className="flex items-center gap-2 text-center">
-              🚀 QUIERO LA AGENDA DEL NIVEL INICIAL HOY
+              🚀 SÍ, QUIERO EL SISTEMA MAESTRO HOY
             </span>
           </motion.a>
 
           <div className="flex flex-col items-center gap-3 text-sm text-slate-600 font-semibold">
             <span>
-              <span aria-hidden="true">🔒</span> Pago 100% seguro. Entrega
-              inmediata por email.
+              <span aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 — Reseñas verificadas
+            </span>
+            <span>
+              <span aria-hidden="true">🛡️</span> Garantía de 7 Días — Riesgo Cero
             </span>
           </div>
         </div>

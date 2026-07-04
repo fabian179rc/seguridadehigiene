@@ -3,32 +3,32 @@ import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 const testimonials = [
 {
-  initial: 'V',
-  color: 'bg-[#f9d6e3] text-[#1a2e5a]',
-  name: 'V. M.',
-  location: 'Maestra Jardinera — Buenos Aires',
-  text: 'Antes perdía horas buscando actividades. Ahora abro el PDF y en minutos está resuelto.'
-},
-{
-  initial: 'L',
-  color: 'bg-[#f5c842]/20 text-[#1a2e5a]',
-  name: 'L. R.',
-  location: 'Practicante de Nivel Inicial — Córdoba',
-  text: 'Los modelos de informes solos ya valieron todo el pack.'
-},
-{
-  initial: 'S',
-  color: 'bg-[#1a2e5a]/10 text-[#1a2e5a]',
-  name: 'S. T.',
-  location: 'Estudiante de Nivel Inicial — Rosario',
-  text: 'Me dio estructura, ideas y confianza para encarar mis prácticas desde el día uno.'
-},
-{
   initial: 'M',
   color: 'bg-[#f9d6e3] text-[#1a2e5a]',
-  name: 'M. B.',
-  location: 'Docente de Sala de 2 años — Mendoza',
-  text: 'Las efemérides siempre me trababan. Ahora las resuelvo rápido y sin estrés.'
+  name: 'M — Martín G.',
+  location: 'Técnico en HyS — Buenos Aires',
+  text: 'En 20 minutos tenía todo listo para capacitar. Nunca más improvisé.'
+},
+{
+  initial: 'C',
+  color: 'bg-[#f5c842]/20 text-[#1a2e5a]',
+  name: 'C — Carolina R.',
+  location: 'Licenciada en HyS — Córdoba',
+  text: 'Material sólido para riesgos críticos. Los registros cumplen todos los requisitos de la ART.'
+},
+{
+  initial: 'D',
+  color: 'bg-[#1a2e5a]/10 text-[#1a2e5a]',
+  name: 'D — Diego T.',
+  location: 'Técnico en HyS — Rosario',
+  text: 'Tengo control total del año. Sé qué vence y qué falta cada semana.'
+},
+{
+  initial: 'P',
+  color: 'bg-[#f9d6e3] text-[#1a2e5a]',
+  name: 'P — Paula B.',
+  location: 'Licenciada en HyS — Mendoza',
+  text: 'Las dinámicas captan a operarios desganados. Ahora doy charlas con total confianza.'
 }];
 
 export function TestimonialsBottom() {
@@ -37,7 +37,7 @@ export function TestimonialsBottom() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-[#1a2e5a]">
-            Docentes que ya transformaron su semana
+            Lo que otros profesionales de HyS están diciendo
           </h2>
         </div>
 

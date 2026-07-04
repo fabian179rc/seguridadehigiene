@@ -2,24 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const situations = [
 {
+  emoji: '�',
+  title: 'El Domingo a la Noche que No Para',
+  desc: 'Mañana tenés capacitación y todavía no terminaste las diapositivas. Otra vez buscando plantillas en Google a las 11 de la noche.'
+},
+{
   emoji: '😩',
-  title: 'Agotamiento por planificación',
-  desc: 'Horas armando actividades desde cero que podrían estar listas en minutos.'
+  title: 'El Miedo a que te Agarren sin Material',
+  desc: 'Sabés que algunas capacitaciones no están bien documentadas y que si llega una auditoría, los registros no van a alcanzar.'
 },
 {
-  emoji: '🐢',
-  title: 'Siempre corriendo detrás',
-  desc: 'La semana empieza y todavía no tenés claro qué dar en sala.'
+  emoji: '⚖️',
+  title: 'La Responsabilidad Legal que Pesa',
+  desc: 'No siempre tenés claro qué documentos respaldan cada capacitación y cuáles pueden dejarte expuesto ante la ART o el Ministerio.'
 },
 {
-  emoji: '⏰',
-  title: 'Sin sistema, sin orden',
-  desc: 'Improvisás en cada jornada y la planificación nunca termina de organizarse.'
-},
-{
-  emoji: '😟',
-  title: 'Todo el peso lo llevás vos',
-  desc: 'Carga mental constante, trabajo fuera de horario y sensación de que nunca alcanza.'
+  emoji: '⏱️',
+  title: 'El Tiempo que se va en Preparar desde Cero',
+  desc: 'Cada nuevo cliente, cada nueva industria, cada nuevo tema significa volver a crear presentaciones, evaluaciones y registros desde cero.'
 }];
 
 export function ProblemSection() {
@@ -28,14 +28,13 @@ export function ProblemSection() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-5xl font-extrabold mb-4 text-[#1a2e5a]">
-            ¿TE RESULTA FAMILIAR ESTA SITUACIÓN?
+            ¿TE RECONOCÉS EN ESTO?
           </h2>
           <p className="text-xl md:text-2xl font-bold text-[#1a2e5a]/80 mb-6">
-            ¿La carga docente te quita más tiempo y energía del que debería?
+            ¿Preparar capacitaciones te quita más tiempo del que debería?
           </p>
           <p className="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Si sos maestra jardinera, practicante o estudiante de nivel inicial,
-            probablemente esto te pase todas las semanas.
+            Si sos Técnico o Licenciado en Higiene y Seguridad, probablemente vivís alguna de estas situaciones.
           </p>
         </div>
 
