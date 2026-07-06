@@ -17,7 +17,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background-color: #e3f1eb;
+  background-color: #f9f8f6;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,7 +35,7 @@ body {
 /* Keyboard focus visibility for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #24504a;
+  outline: 3px solid #4A553F;
   outline-offset: 2px;
   border-radius: 9999px;
 }

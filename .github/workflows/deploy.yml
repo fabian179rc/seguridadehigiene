@@ -38,7 +38,7 @@ jobs:
         run: npm run build
 
       - name: Ensure custom domain CNAME
-        run: echo "maestrodeauditor.tupuntodigital.shop" > dist/CNAME
+        run: echo "seguridadehigiene.tupuntodigital.shop" > dist/CNAME
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

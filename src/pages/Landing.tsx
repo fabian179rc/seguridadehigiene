@@ -4,15 +4,14 @@ import { ProblemSection } from '../components/ProblemSection';
 import { SolutionSection } from '../components/SolutionSection';
 import { FeaturesSection } from '../components/FeaturesSection';
 import { BloquesSection } from '../components/BloquesSection';
-import { ProcessesSection } from '../components/ProcessesSection';
 import { BonusesSection } from '../components/BonusesSection';
+import { ProcessesSection } from '../components/ProcessesSection';
 import { PricingSection } from '../components/PricingSection';
 import { GuaranteeSection } from '../components/GuaranteeSection';
 import { TestimonialsBottom } from '../components/TestimonialsBottom';
 import { FaqSection } from '../components/FaqSection';
 import { FinalPricingCTA } from '../components/FinalPricingCTA';
 import { Footer } from '../components/Footer';
-import { StickyCTA } from '../components/StickyCTA';
 export function Landing() {
   return <main className="min-h-screen bg-transparent">
       <HeroSection />
@@ -27,10 +26,10 @@ export function Landing() {
         <BloquesSection />
       </div>
       <div className="cv-section">
-        <ProcessesSection />
+        <BonusesSection />
       </div>
       <div className="cv-section">
-        <BonusesSection />
+        <ProcessesSection />
       </div>
       <PricingSection />
       <div className="cv-section">
@@ -46,6 +45,5 @@ export function Landing() {
         <FinalPricingCTA />
       </div>
       <Footer />
-      <StickyCTA />
     </main>;
 }

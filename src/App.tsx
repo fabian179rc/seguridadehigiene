@@ -4,12 +4,12 @@ import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 const META_PIXEL_ID = "1656160899010195";
 const PAGE_TITLE =
-  "Sistema Maestro de Inspecciones HyS — Sistema Completo para Profesionales de Higiene y Seguridad";
+  "Mega Pack Higiene y Seguridad Blindada — Sistema Completo de Gestión para Profesionales de HyS";
 const PAGE_DESC =
-  "Checklists, informes y seguimiento listos para usar desde el primer día.";
-const HERO_IMAGE = `${import.meta.env.BASE_URL}mockup.webp`;
+  "Protocolos, informes, matrices, planillas y documentos listos para editar, presentar y utilizar desde el primer día.";
+const HERO_IMAGE = `${import.meta.env.BASE_URL}megapack-mockup.webp`;
 
-const SITE_URL = "https://maestrodeauditor.tupuntodigital.shop";
+const SITE_URL = "https://seguridadehigiene.tupuntodigital.shop";
 function setMeta(attr: "name" | "property", key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(
     `meta[${attr}="${key}"]`,
@@ -58,7 +58,7 @@ export function App() {
       "viewport",
       "width=device-width, initial-scale=1, viewport-fit=cover",
     );
-    setMeta("name", "theme-color", "#E3F1EB");
+    setMeta("name", "theme-color", "#F9F8F6");
     setMeta("name", "robots", "index, follow");
     setMeta("property", "og:type", "website");
     setMeta("property", "og:title", PAGE_TITLE);
@@ -66,7 +66,7 @@ export function App() {
     setMeta("property", "og:locale", "es_AR");
     setMeta("property", "og:image", HERO_IMAGE);
     setMeta("property", "og:url", SITE_URL);
-    setMeta("property", "og:site_name", "Sistema Maestro de Inspecciones HyS");
+    setMeta("property", "og:site_name", "Mega Pack Higiene y Seguridad Blindada");
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:image", HERO_IMAGE);
     setMeta("name", "twitter:title", PAGE_TITLE);
@@ -79,19 +79,19 @@ export function App() {
       ld.textContent = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Product",
-        name: "Sistema Maestro de Inspecciones HyS",
+        name: "Mega Pack Higiene y Seguridad Blindada",
         description: PAGE_DESC,
         image: HERO_IMAGE,
         brand: {
           "@type": "Brand",
-          name: "Sistema Maestro de Inspecciones HyS",
+          name: "Mega Pack Higiene y Seguridad Blindada",
         },
         offers: {
           "@type": "Offer",
           price: "19990",
           priceCurrency: "ARS",
           availability: "https://schema.org/InStock",
-          url: "https://sistema-maestro-de-inspecciones-hys.impultienda.ar/checkout",
+          url: "https://mega-pack-higiene-y-seguridad-blindada.impultienda.ar/checkout",
         },
       });
       document.head.appendChild(ld);
@@ -106,28 +106,28 @@ export function App() {
         "@type": "FAQPage",
         mainEntity: [
           {
-            q: "¿Es físico o digital?",
-            a: "100% digital. Acceso inmediato para descargar, editar e imprimir desde cualquier dispositivo.",
+            q: "¿Es en papel o digital?",
+            a: "Es un producto 100% digital. Recibís todos los bloques de forma inmediata en tu correo electrónico, con formularios y guías listos para usar e imprimir en casa o en cualquier centro de copiado las veces que necesites.",
           },
           {
-            q: "¿Necesito experiencia previa?",
-            a: "No. El sistema está diseñado para técnicos, licenciados, supervisores y responsables de HyS en cualquier etapa de su carrera. Si sos nuevo, te da la estructura. Si ya tenés experiencia, te ahorra horas.",
+            q: "¿Necesito ser experto en administración para usarlo?",
+            a: "No. Todo el sistema está diseñado para usarse directamente, sin conocimientos previos de gestión administrativa. Si sabés imprimir y completar un formulario, podés usar este sistema desde el primer día.",
           },
           {
-            q: "¿Sirve para cualquier provincia o país?",
-            a: "Sí. El contenido está basado en buenas prácticas internacionales y es aplicable en cualquier organización, región o país de habla hispana.",
+            q: "¿Sirve para profesionales de cualquier provincia de Argentina?",
+            a: "Sí. Todo el sistema está basado en la normativa nacional vigente: Ley 19.587, Decreto 351/79 y resoluciones de la SRT aplicables en todo el territorio argentino.",
           },
           {
-            q: "¿Puedo adaptarlo a distintos clientes o empresas?",
-            a: "Sí. Todas las plantillas, checklists y formatos son 100% editables. Podés personalizarlos con el nombre de la empresa, sector, riesgo específico y cualquier dato que necesites.",
+            q: "¿Qué pasa si ya tengo algunos documentos armados?",
+            a: "Perfecto. El sistema complementa lo que ya tenés. Vas a poder identificar qué falta, reemplazar los modelos incompletos y ordenar todo bajo un mismo sistema coherente y profesional.",
           },
           {
-            q: "¿Cuándo recibo el acceso?",
-            a: "Inmediatamente después de tu compra. Recibís el link de descarga en tu correo electrónico en menos de 5 minutos.",
+            q: "¿Cuándo recibo el material?",
+            a: "Inmediatamente después de tu compra. Recibís un correo con el acceso a todos los archivos para descargar en el momento.",
           },
           {
-            q: "¿Ya tengo algunos modelos propios, me sirve igual?",
-            a: "Sí. El sistema no reemplaza lo que ya usás, lo completa y lo ordena. Vas a encontrar herramientas que te faltan, estructuras que podés mejorar y tiempo que vas a recuperar.",
+            q: "¿Sirve si recién me recibí o si tengo pocos clientes?",
+            a: "Sí, y es el mejor momento para empezar. Arrancar con el sistema correcto desde el principio te ahorra años de correcciones y te protege desde el primer cliente.",
           },
         ].map((item) => ({
           "@type": "Question",

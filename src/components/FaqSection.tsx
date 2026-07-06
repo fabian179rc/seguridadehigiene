@@ -3,65 +3,71 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 const faqs = [
 {
-  q: '¿Es físico o digital?',
-  a: '100% digital. Acceso inmediato para descargar, editar e imprimir desde cualquier dispositivo.'
+  q: '¿Es en papel o digital?',
+  a: 'Es un producto 100% digital. Recibís todos los bloques de forma inmediata en tu correo electrónico, con formularios y guías listos para usar e imprimir en casa o en cualquier centro de copiado las veces que necesites.'
 },
 {
-  q: '¿Necesito experiencia previa?',
-  a: 'No. El sistema está diseñado para técnicos, licenciados, supervisores y responsables de HyS en cualquier etapa de su carrera. Si sos nuevo, te da la estructura. Si ya tenés experiencia, te ahorra horas.'
+  q: '¿Necesito ser experto en administración para usarlo?',
+  a: 'No. Todo el sistema está diseñado para usarse directamente, sin conocimientos previos de gestión administrativa. Si sabés imprimir y completar un formulario, podés usar este sistema desde el primer día.'
 },
 {
-  q: '¿Sirve para cualquier provincia o país?',
-  a: 'Sí. El contenido está basado en buenas prácticas internacionales y es aplicable en cualquier organización, región o país de habla hispana.'
+  q: '¿Sirve para profesionales de cualquier provincia de Argentina?',
+  a: 'Sí. Todo el sistema está basado en la normativa nacional vigente: Ley 19.587, Decreto 351/79 y resoluciones de la SRT aplicables en todo el territorio argentino.'
 },
 {
-  q: '¿Puedo adaptarlo a distintos clientes o empresas?',
-  a: 'Sí. Todas las plantillas, checklists y formatos son 100% editables. Podés personalizarlos con el nombre de la empresa, sector, riesgo específico y cualquier dato que necesites.'
+  q: '¿Qué pasa si ya tengo algunos documentos armados?',
+  a: 'Perfecto. El sistema complementa lo que ya tenés. Vas a poder identificar qué falta, reemplazar los modelos incompletos y ordenar todo bajo un mismo sistema coherente y profesional.'
 },
 {
-  q: '¿Cuándo recibo el acceso?',
-  a: 'Inmediatamente después de tu compra. Recibís el link de descarga en tu correo electrónico en menos de 5 minutos.'
+  q: '¿Cuándo recibo el material?',
+  a: 'Inmediatamente después de tu compra. Recibís un correo con el acceso a todos los archivos para descargar en el momento.'
 },
 {
-  q: '¿Ya tengo algunos modelos propios, me sirve igual?',
-  a: 'Sí. El sistema no reemplaza lo que ya usás, lo completa y lo ordena. Vas a encontrar herramientas que te faltan, estructuras que podés mejorar y tiempo que vas a recuperar.'
+  q: '¿Sirve si recién me recibí o si tengo pocos clientes?',
+  a: 'Sí, y es el mejor momento para empezar. Arrancar con el sistema correcto desde el principio te ahorra años de correcciones y te protege desde el primer cliente.'
 }];
 
 export function FaqSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
-    <section className="py-16 md:py-24 bg-[#e3f1eb] pt-[30px] pb-[30px]">
-      <div className="container mx-auto px-4 max-w-[1100px]">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-[#1c3733] leading-tight">
-            ❓ Preguntas Frecuentes
+    <section className="py-14 md:py-20 bg-[#f9f8f6]">
+      <div className="container mx-auto px-4 max-w-3xl">
+        <div className="text-center mb-10 md:mb-12">
+          <span className="inline-block px-6 py-2.5 mb-5 rounded-full bg-[#566049] text-white font-semibold tracking-[0.18em] uppercase text-xs">
+            Preguntas Frecuentes
+          </span>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-[#2f3a2c] leading-tight">
+            Respondemos a{" "}
+            <em className="text-[#c06a52] font-bold italic">
+              tus preguntas
+            </em>
           </h2>
         </div>
 
-        <div className="space-y-4 max-w-3xl mx-auto">
+        <div className="space-y-4">
           {faqs.map((faq, i) => {
             const isOpen = openIndex === i;
             return (
               <div
                 key={i}
-                className="bg-white rounded-2xl shadow-sm border border-[#dde8e4]">
+                className="bg-white rounded-2xl shadow-sm shadow-black/5">
 
                 <button
-                  className="w-full px-6 md:px-8 py-6 text-left flex justify-between items-center gap-4 focus:outline-none"
+                  className="w-full px-6 md:px-8 py-5 md:py-6 text-left flex justify-between items-center gap-4 focus:outline-none"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   aria-expanded={isOpen}>
 
-                  <span className="font-heading font-bold text-[#1c3733] text-lg md:text-xl">
+                  <span className="font-heading font-bold text-[#2f3a2c] text-lg md:text-xl">
                     {faq.q}
                   </span>
                   <span
-                    className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-colors ${isOpen ? 'bg-[#24504a] text-white' : 'bg-[#24504a]/10 text-[#24504a]'}`}
+                    className="flex-shrink-0 w-9 h-9 rounded-full bg-[#566049] text-white flex items-center justify-center transition-colors"
                     aria-hidden="true">
 
                     {isOpen ?
-                    <Minus className="w-5 h-5" /> :
+                    <Minus className="w-4 h-4" /> :
 
-                    <Plus className="w-5 h-5" />
+                    <Plus className="w-4 h-4" />
                     }
                   </span>
                 </button>
@@ -86,7 +92,7 @@ export function FaqSection() {
                     }}
                     className="overflow-hidden">
 
-                      <div className="px-6 md:px-8 pb-8 -mt-2 text-[#4f6b66] leading-relaxed text-[16px] md:text-lg">
+                      <div className="px-6 md:px-8 pb-6 md:pb-7 -mt-1 text-slate-600 leading-relaxed text-[15px] md:text-base max-w-[58ch]">
                         {faq.a}
                       </div>
                     </motion.div>

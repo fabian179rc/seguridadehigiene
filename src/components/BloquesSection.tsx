@@ -1,127 +1,102 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { BookOpen, ClipboardList, Search, PenLine, Scale } from 'lucide-react';
 const bloques = [
 {
-  num: '01',
-  emoji: '🗺️',
-  title: 'Mapa Maestro del Sistema',
-  desc: 'Visión completa del circuito de inspecciones de principio a fin.'
+  num: 'Bloque 1',
+  icon: BookOpen,
+  emoji: '📘',
+  title: 'Manual Maestro de Gestión Administrativa HyS',
+  desc: 'La guía principal para organizar tu gestión profesional, con documentación, protocolos y un plan de implementación en 7 días.'
 },
 {
-  num: '02',
-  emoji: '📐',
-  title: 'Fundamentos Técnicos',
-  desc: 'Bases para inspeccionar con criterio profesional y sólido.'
+  num: 'Bloque 2',
+  icon: ClipboardList,
+  emoji: '📋',
+  title: 'Pack Completo de Formularios de Campo',
+  desc: 'Formularios profesionales para registrar visitas, capacitaciones, entregas de EPP e investigaciones. Listos para usar.'
 },
 {
-  num: '03',
-  emoji: '📅',
-  title: 'Programa Anual de Inspecciones',
-  desc: 'Cómo diseñar y planificar el año completo por sector y riesgo.'
-},
-{
-  num: '04',
-  emoji: '⚠️',
-  title: 'Matrices de Riesgo y Criticidad',
-  desc: 'Priorización de sectores, procesos y condiciones peligrosas.'
-},
-{
-  num: '05',
-  emoji: '✅',
-  title: 'Checklists Profesionales por Sector',
-  desc: 'Listas de verificación para industria, obra, comercio y servicios.'
-},
-{
-  num: '06',
+  num: 'Bloque 3',
+  icon: Search,
   emoji: '🔍',
-  title: 'Técnicas de Inspección en Campo',
-  desc: 'Cómo recorrer, observar, preguntar y registrar evidencia real.'
+  title: 'Módulo de Auditoría Rápida en Sitio',
+  desc: 'Checklists listos para inspecciones, relevamientos y auditorías, sin olvidarte de ningún detalle.'
 },
 {
-  num: '07',
-  emoji: '📸',
-  title: 'Clasificación de Hallazgos',
-  desc: 'Cómo categorizar, redactar y documentar lo que encontrás.'
+  num: 'Bloque 4',
+  icon: PenLine,
+  emoji: '✍️',
+  title: 'Modelos de Redacción Técnica',
+  desc: 'Documentos técnicos pre-redactados para completar y utilizar en minutos, sin empezar desde cero.'
 },
 {
-  num: '08',
-  emoji: '📝',
-  title: 'Informes Técnicos Accionables',
-  desc: 'Informes que generan decisiones, no informes que nadie lee.'
-},
-{
-  num: '09',
-  emoji: '🛠️',
-  title: 'Acciones Correctivas y Preventivas',
-  desc: 'Asignación, plazos, responsables y cierre con evidencia.'
-},
-{
-  num: '10',
-  emoji: '📊',
-  title: 'KPIs y Dashboards de Gestión',
-  desc: 'Indicadores reales para medir y demostrar tu trabajo.'
-},
-{
-  num: '11',
-  emoji: '🏭',
-  title: 'Casos Prácticos y Ejercicios',
-  desc: 'Aplicación real con plantillas y formatos editables incluidos.'
-},
-{
-  num: '12',
-  emoji: '🏆',
-  title: 'Proyecto Final Integrador',
-  desc: 'Implementación completa del sistema en una organización real.'
+  num: 'Bloque 5',
+  icon: Scale,
+  emoji: '⚖️',
+  title: 'Blindaje Legal del Profesional HyS',
+  desc: 'La guía práctica para trabajar con respaldo legal, evitar errores y proteger tu responsabilidad profesional.'
 }];
 
 export function BloquesSection() {
   return (
-    <section className="py-12 md:py-16 bg-[#e3f1eb] pt-[30px] pb-[30px]">
-      <div className="container mx-auto px-4 max-w-[1100px]">
-        <div className="text-center mb-8">
-          <span className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#24504a] text-white font-bold tracking-[0.1em] uppercase text-xs md:text-sm">
-            📦 12 Módulos Incluidos
+    <section className="py-16 md:py-24 bg-[#f9f8f6]">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <div className="text-center mb-10">
+          <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-5 rounded-full bg-[#4A553F] text-white font-semibold tracking-[0.18em] uppercase text-xs">
+            📦 5 Bloques Incluidos
           </span>
+          <h2 className="font-heading font-bold text-[#2f3a2c] text-3xl md:text-5xl leading-tight">
+            Todo el sistema en{" "}
+            <span className="italic text-[#5C6851]">
+              5 bloques listos para usar
+            </span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
-          {bloques.map((b, i) =>
-          <motion.div
-            key={i}
-            initial={{
-              opacity: 0,
-              y: 16
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0
-            }}
-            viewport={{
-              once: true
-            }}
-            transition={{
-              delay: i * 0.06
-            }}
-            className="group relative flex flex-col bg-white border border-[#dde8e4]/70 rounded-xl sm:rounded-2xl p-2.5 sm:p-5 shadow-[0_2px_14px_rgba(47,58,44,0.05)] hover:shadow-[0_8px_24px_rgba(47,58,44,0.09)] hover:-translate-y-0.5 transition-all duration-300 overflow-hidden">
-
-              <span className="pointer-events-none absolute -top-2 right-2 font-heading font-bold text-4xl sm:text-6xl text-[#24504a]/[0.06] select-none leading-none">
-                {b.num}
-              </span>
-
-              <div className="relative w-7 h-7 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-[#24504a]/10 flex items-center justify-center text-sm sm:text-lg flex-shrink-0 mb-1.5 sm:mb-3">
-                {b.emoji}
+        <div className="space-y-5">
+          {bloques.map((b, i) => (
+            <motion.div
+              key={i}
+              initial={{
+                opacity: 0,
+                y: 16,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                delay: i * 0.08,
+              }}
+              className="flex items-start gap-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-7 shadow-sm"
+            >
+              <div className="flex-shrink-0 flex flex-col items-center gap-2">
+                <div className="w-14 h-14 rounded-2xl bg-[#f4efe2] border border-amber-100 flex items-center justify-center">
+                  <b.icon className="w-7 h-7 text-[#5C6851]" />
+                </div>
+                <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-[#5C6851]">
+                  {b.num}
+                </span>
               </div>
-              <h3 className="relative font-heading font-bold text-[#1c3733] text-[13px] sm:text-lg mb-1 sm:mb-1.5 leading-snug">
-                {b.title}
-              </h3>
-              <p className="relative text-[#4f6b66] leading-snug text-[11px] sm:text-[13.5px]">
-                {b.desc}
-              </p>
-              <div className="relative mt-2 sm:mt-3 h-px w-8 sm:w-10 bg-[#24504a]/20 group-hover:w-16 transition-all duration-300" />
+              <div>
+                <h3 className="font-heading font-bold text-[#2f3a2c] text-xl md:text-2xl mb-2">
+                  <span aria-hidden="true" className="mr-1">
+                    {b.emoji}
+                  </span>
+                  {b.title}
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-[15px] md:text-base">
+                  {b.desc}
+                </p>
+              </div>
             </motion.div>
-          )}
+          ))}
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

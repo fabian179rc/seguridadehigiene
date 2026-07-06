@@ -1,54 +1,69 @@
-import React from "react";
-import { motion } from "framer-motion";
-const processes = [
-  { icon: "📋", label: "Planificación Anual" },
-  { icon: "🔍", label: "Relevamiento en Campo" },
-  { icon: "⚠️", label: "Clasificación de Hallazgos" },
-  { icon: "📝", label: "Redacción de Informes" },
-  { icon: "📊", label: "Matrices de Riesgo" },
-  { icon: "✅", label: "Acciones Correctivas" },
-  { icon: "👷", label: "Orden y Limpieza" },
-  { icon: "🏗️", label: "Inspecciones en Obra" },
-  { icon: "🔥", label: "Prevención de Incendios" },
-  { icon: "🧯", label: "EPP y Protecciones" },
-  { icon: "📈", label: "KPIs y Tableros" },
-  { icon: "➕", label: "Y mucho más..." },
-];
+import React from 'react';
+import { motion } from 'framer-motion';
+const changes = [
+{
+  emoji: '📖',
+  title: 'Legajo Técnico al Día',
+  desc: 'Cada empresa tiene su documentación completa, sus registros firmados y sus vencimientos bajo control. Sin riesgo legal ni papeles perdidos.'
+},
+{
+  emoji: '📈',
+  title: 'Control Profesional Real',
+  desc: 'Sabés exactamente qué tiene cada cliente, qué está pendiente y qué vence el mes que viene. Sin sorpresas de la SRT ni de la ART.'
+},
+{
+  emoji: '🕊️',
+  title: 'Tranquilidad Mental',
+  desc: 'Se terminó la sensación de que "algo siempre falta". Tu gestión tiene sistema y vos podés enfocarte en lo que realmente importa: atender más empresas y crecer.'
+},
+{
+  emoji: '❤️',
+  title: 'Profesionalismo Visible',
+  desc: 'Cada visita tiene su acta. Cada entrega de EPP tiene su planilla firmada. Cada desvío tiene su notificación. Así se construye una carrera sólida y sin exposición legal.'
+}];
 
 export function ProcessesSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#e3f1eb] pt-[30px] pb-[30px]">
-      <div className="container mx-auto px-4 max-w-[1100px] text-center">
-        <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-6 rounded-full bg-[#24504a] text-white font-bold tracking-[0.1em] uppercase text-xs md:text-sm">
-          🎯 Cubre los Procesos Más Importantes
-        </span>
-        <h2 className="font-heading text-3xl md:text-5xl font-semibold text-[#1c3733] mb-10 leading-tight max-w-3xl mx-auto">
-          Cubre los procesos más importantes de una{" "}
-          <span className="italic text-[#a3763f]">Inspección HyS</span>
-        </h2>
+    <section className="py-12 md:py-16 bg-[#f9f8f6]">
+      <div className="container mx-auto px-4 max-w-5xl">
+        <div className="text-center mb-12">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#2f3a2c] mb-4">
+            Lo que va a cambiar
+          </h2>
+          <p className="text-lg text-slate-600">
+            Lo que va a cambiar en tu gestión profesional desde la primera
+            semana
+          </p>
+        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 max-w-4xl mx-auto mb-8">
-          {processes.map((p, i) => (
+        <div className="grid sm:grid-cols-2 gap-8">
+          {changes.map((c, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 12 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.02 }}
-              className="flex items-center gap-2 bg-white border border-[#dde8e4] rounded-lg px-3 py-2 text-left"
+              initial={{
+                opacity: 0,
+                y: 20,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+              }}
+              transition={{
+                delay: i * 0.1,
+              }}
+              className="bg-white border border-amber-100 p-8 rounded-3xl shadow-sm"
             >
-              <span className="text-base flex-shrink-0">{p.icon}</span>
-              <span className="font-semibold text-[#1c3733] text-[13px] leading-snug">
-                {p.label}
-              </span>
+              <div className="text-4xl mb-4">{c.emoji}</div>
+              <h3 className="text-xl font-bold text-[#2f3a2c] mb-3">
+                {c.title}
+              </h3>
+              <p className="text-slate-600 leading-relaxed">{c.desc}</p>
             </motion.div>
           ))}
         </div>
-
-        <p className="text-[#4f6b66] font-medium max-w-2xl mx-auto">
-          💡 Cada módulo viene con plantillas, checklists y formatos listos para
-          usar de inmediato.
-        </p>
       </div>
     </section>
   );
