@@ -2,40 +2,76 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const bloques = [
 {
-  num: '1',
-  emoji: '🧭',
-  title: 'Método Maestro',
-  desc: 'Circuito completo para planificar, ejecutar y cerrar auditorías.'
+  num: '01',
+  emoji: '🗺️',
+  title: 'Mapa Maestro del Sistema',
+  desc: 'Visión completa del circuito de inspecciones de principio a fin.'
 },
 {
-  num: '2',
-  emoji: '🗓️',
-  title: 'Planificación Inteligente',
-  desc: 'Cronogramas, objetivos, alcance y criterios de priorización.'
+  num: '02',
+  emoji: '📐',
+  title: 'Fundamentos Técnicos',
+  desc: 'Bases para inspeccionar con criterio profesional y sólido.'
 },
 {
-  num: '3',
+  num: '03',
+  emoji: '📅',
+  title: 'Programa Anual de Inspecciones',
+  desc: 'Cómo diseñar y planificar el año completo por sector y riesgo.'
+},
+{
+  num: '04',
+  emoji: '⚠️',
+  title: 'Matrices de Riesgo y Criticidad',
+  desc: 'Priorización de sectores, procesos y condiciones peligrosas.'
+},
+{
+  num: '05',
+  emoji: '✅',
+  title: 'Checklists Profesionales por Sector',
+  desc: 'Listas de verificación para industria, obra, comercio y servicios.'
+},
+{
+  num: '06',
   emoji: '🔍',
-  title: 'Auditoría en Campo',
-  desc: 'Checklists, actas de inspección y registro de evidencias.'
+  title: 'Técnicas de Inspección en Campo',
+  desc: 'Cómo recorrer, observar, preguntar y registrar evidencia real.'
 },
 {
-  num: '4',
-  emoji: '🗂️',
-  title: 'Hallazgos e Informes',
-  desc: 'Documentación, clasificación de desvíos e informes profesionales.'
+  num: '07',
+  emoji: '📸',
+  title: 'Clasificación de Hallazgos',
+  desc: 'Cómo categorizar, redactar y documentar lo que encontrás.'
 },
 {
-  num: '5',
+  num: '08',
+  emoji: '📝',
+  title: 'Informes Técnicos Accionables',
+  desc: 'Informes que generan decisiones, no informes que nadie lee.'
+},
+{
+  num: '09',
   emoji: '🛠️',
-  title: 'Acciones Correctivas',
-  desc: 'Planes de acción con responsables, plazos y seguimiento.'
+  title: 'Acciones Correctivas y Preventivas',
+  desc: 'Asignación, plazos, responsables y cierre con evidencia.'
 },
 {
-  num: '6',
-  emoji: '🤝',
-  title: 'Implementación con Clientes',
-  desc: 'Adaptación a industrias, comercios, obras y servicios.'
+  num: '10',
+  emoji: '📊',
+  title: 'KPIs y Dashboards de Gestión',
+  desc: 'Indicadores reales para medir y demostrar tu trabajo.'
+},
+{
+  num: '11',
+  emoji: '🏭',
+  title: 'Casos Prácticos y Ejercicios',
+  desc: 'Aplicación real con plantillas y formatos editables incluidos.'
+},
+{
+  num: '12',
+  emoji: '🏆',
+  title: 'Proyecto Final Integrador',
+  desc: 'Implementación completa del sistema en una organización real.'
 }];
 
 export function BloquesSection() {
@@ -44,7 +80,7 @@ export function BloquesSection() {
       <div className="container mx-auto px-4 max-w-[1100px]">
         <div className="text-center mb-8">
           <span className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#4a553f] text-white font-bold tracking-[0.1em] uppercase text-xs md:text-sm">
-            📦 6 Bloques Incluidos
+            📦 12 Módulos Incluidos
           </span>
         </div>
 

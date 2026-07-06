@@ -3,32 +3,32 @@ import { motion } from 'framer-motion';
 import { Star, MessageCircle } from 'lucide-react';
 const testimonials = [
 {
-  initial: 'M',
+  initial: 'L',
   color: 'bg-[#f6d9c4] text-[#2f3a2c]',
-  name: 'Martín G.',
+  name: 'Lucas M.',
   location: 'Técnico en HyS · Buenos Aires',
-  text: 'Ahora sigo siempre el mismo método y los informes me quedan mucho más claros y profesionales.'
+  text: 'Antes armaba el programa de inspecciones en hojas sueltas. Ahora tengo el año planificado, con matrices, cronogramas y seguimiento. No puedo creer que antes funcionaba sin esto.'
 },
 {
-  initial: 'C',
+  initial: 'S',
   color: 'bg-[#cdd9c2] text-[#2f3a2c]',
-  name: 'Carolina R.',
+  name: 'Sofía R.',
   location: 'Licenciada en HyS · Córdoba',
-  text: 'El módulo de clasificación de hallazgos solo ya justificó toda la compra.'
+  text: 'Los checklists por sector solos ya justificaron toda la compra. Entro a cualquier empresa y ya sé exactamente qué recorrer y qué registrar.'
 },
 {
-  initial: 'D',
+  initial: 'F',
   color: 'bg-[#e6ddc7] text-[#2f3a2c]',
-  name: 'Diego T.',
+  name: 'Federico T.',
   location: 'Técnico en HyS · Rosario',
-  text: 'Antes tardaba horas organizando fotos. Ahora termino todo mucho más rápido.'
+  text: 'Antes el informe me llevaba horas y quedaba irregular. Ahora sigo la estructura del sistema y el informe sale en 30 minutos con evidencia y acciones incluidas.'
 },
 {
-  initial: 'P',
+  initial: 'V',
   color: 'bg-[#f6d9c4] text-[#2f3a2c]',
-  name: 'Paula B.',
-  location: 'Licenciada en HyS · Mendoza',
-  text: 'Mis clientes empezaron a notar el cambio enseguida. Las auditorías tienen otro nivel.'
+  name: 'Valeria B.',
+  location: 'Responsable HyS · Mendoza',
+  text: 'Cuando vino la auditoría externa, tenía todo: cronograma, registros, acciones correctivas cerradas, indicadores. Nunca había estado tan preparado.'
 }];
 
 export function TestimonialsBottom() {

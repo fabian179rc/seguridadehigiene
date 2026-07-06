@@ -3,36 +3,36 @@ import { motion } from 'framer-motion';
 const bonuses = [
 {
   num: 1,
-  title: 'Kit Express — Auditoría en 30 Min',
-  desc: 'Checklist de recorrida + guía paso a paso para usar desde el celular.',
+  title: 'Guía de Dinámicas y Actividades para Capacitaciones de Alto Impacto',
+  desc: 'Rompehielos HyS, simulaciones, análisis de incidentes y cierres con compromisos medibles. Convertí tus capacitaciones en acciones reales de tu equipo.',
   image: "b1.webp"
 
 },
 {
   num: 2,
-  title: 'Checklist de Primera Visita al Cliente',
-  desc: 'Todos los puntos críticos del primer relevamiento en un solo documento.',
+  title: 'Biblioteca Visual HyS Lista para Imprimir',
+  desc: 'Infografías de riesgos, carteles de advertencia, fichas visuales para charlas cortas y tarjetas de puesto. Imprimí, adaptá y usá sin diseñar nada desde cero.',
   image: "b2.webp"
 
 },
 {
   num: 3,
-  title: '+150 Frases Técnicas para Informes',
-  desc: 'Observaciones y recomendaciones ya redactadas, listas para copiar y adaptar.',
+  title: 'Sistema Anual de Planificación y Control de Capacitaciones',
+  desc: 'Cronograma editable, matrices tema-riesgo-puesto, control de asistencia, vencimientos, alertas e indicadores para demostrar cumplimiento real.',
   image: "b3.webp"
 
 },
 {
   num: 4,
-  title: 'Mapa Visual de Clasificación de Desvíos',
-  desc: 'Criterios claros para diferenciar observaciones, NC y desvíos críticos.',
+  title: 'Banco Profesional de Evaluaciones y Seguimiento',
+  desc: 'Preguntas listas por tema, puesto y riesgo. Criterios de corrección, seguimiento de desempeño e informes listos para auditorías.',
   image: "b4.webp"
 
 },
 {
   num: 5,
-  title: 'Método "Informe Profesional en 7 Pasos"',
-  desc: 'De la recorrida al informe entregado, sin quedarte en blanco.',
+  title: 'Kit Profesional de Documentación HyS',
+  desc: 'Registros de asistencia, actas, constancias, certificados, autorizaciones, entrega de material y listas de control documental. Todo organizado para sobrevivir cualquier auditoría.',
   image: "b5.webp"
 
 }];

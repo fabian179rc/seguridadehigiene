@@ -4,27 +4,27 @@ import { Plus, Minus } from 'lucide-react';
 const faqs = [
 {
   q: '¿Es físico o digital?',
-  a: '100% digital. Acceso inmediato para descargar, editar e imprimir.'
+  a: '100% digital. Acceso inmediato para descargar, editar e imprimir desde cualquier dispositivo.'
 },
 {
   q: '¿Necesito experiencia previa?',
-  a: 'No. El sistema guía el proceso completo desde el principio.'
+  a: 'No. El sistema está diseñado para técnicos, licenciados, supervisores y responsables de HyS en cualquier etapa de su carrera. Si sos nuevo, te da la estructura. Si ya tenés experiencia, te ahorra horas.'
 },
 {
-  q: '¿Sirve para cualquier provincia?',
-  a: 'Sí. Los documentos son adaptables a cualquier contexto.'
+  q: '¿Sirve para cualquier provincia o país?',
+  a: 'Sí. El contenido está basado en buenas prácticas internacionales y es aplicable en cualquier organización, región o país de habla hispana.'
 },
 {
-  q: '¿Puedo adaptarlo a mis clientes?',
-  a: 'Sí. Todos los archivos son editables.'
+  q: '¿Puedo adaptarlo a distintos clientes o empresas?',
+  a: 'Sí. Todas las plantillas, checklists y formatos son 100% editables. Podés personalizarlos con el nombre de la empresa, sector, riesgo específico y cualquier dato que necesites.'
 },
 {
   q: '¿Cuándo recibo el acceso?',
-  a: 'Inmediatamente después del pago.'
+  a: 'Inmediatamente después de tu compra. Recibís el link de descarga en tu correo electrónico en menos de 5 minutos.'
 },
 {
-  q: '¿Ya tengo algunos modelos míos?',
-  a: 'Este sistema los complementa y los organiza dentro de un método.'
+  q: '¿Ya tengo algunos modelos propios, me sirve igual?',
+  a: 'Sí. El sistema no reemplaza lo que ya usás, lo completa y lo ordena. Vas a encontrar herramientas que te faltan, estructuras que podés mejorar y tiempo que vas a recuperar.'
 }];
 
 export function FaqSection() {

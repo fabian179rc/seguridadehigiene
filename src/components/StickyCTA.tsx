@@ -59,7 +59,7 @@ export function StickyCTA() {
               }}
               className="inline-flex items-center justify-center gap-2 bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold text-base px-4 py-[12px] rounded-full shadow-2xl shadow-[#2f3a2c]/20 border-2 border-white/50 transition-colors"
             >
-              🚀 ¡SI, ACCEDER AL SISTEMA MAESTRO!
+              🚀 ¡SÍ, QUIERO EL SISTEMA MAESTRO!
             </motion.a>
           </div>
         </motion.div>

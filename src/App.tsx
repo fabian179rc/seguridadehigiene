@@ -4,12 +4,12 @@ import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 const META_PIXEL_ID = "1656160899010195";
 const PAGE_TITLE =
-  "Sistema Maestro de Auditorías HyS — Sistema Completo para Profesionales de Higiene y Seguridad";
+  "Sistema Maestro de Inspecciones HyS — Sistema Completo para Profesionales de Higiene y Seguridad";
 const PAGE_DESC =
   "Checklists, formularios, actas, informes, evidencias y planes de acción listos para usar desde el primer día.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}mockup.webp`;
 
-const SITE_URL = "https://sistema-maestro-de-auditorias-hys.impultienda.ar";
+const SITE_URL = "https://maestrodeinspecciones.tupuntodigital.shop";
 function setMeta(attr: "name" | "property", key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(
     `meta[${attr}="${key}"]`,
@@ -66,7 +66,7 @@ export function App() {
     setMeta("property", "og:locale", "es_AR");
     setMeta("property", "og:image", HERO_IMAGE);
     setMeta("property", "og:url", SITE_URL);
-    setMeta("property", "og:site_name", "Sistema Maestro de Auditorías HyS");
+    setMeta("property", "og:site_name", "Sistema Maestro de Inspecciones HyS");
     setMeta("name", "twitter:card", "summary_large_image");
     setMeta("name", "twitter:image", HERO_IMAGE);
     setMeta("name", "twitter:title", PAGE_TITLE);
@@ -79,19 +79,19 @@ export function App() {
       ld.textContent = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Product",
-        name: "Sistema Maestro de Auditorías HyS",
+        name: "Sistema Maestro de Inspecciones HyS",
         description: PAGE_DESC,
         image: HERO_IMAGE,
         brand: {
           "@type": "Brand",
-          name: "Sistema Maestro de Auditorías HyS",
+          name: "Sistema Maestro de Inspecciones HyS",
         },
         offers: {
           "@type": "Offer",
           price: "19990",
           priceCurrency: "ARS",
           availability: "https://schema.org/InStock",
-          url: "https://sistema-maestro-de-auditorias-hys.impultienda.ar/checkout",
+          url: "https://sistema-maestro-de-inspecciones-hys.impultienda.ar/checkout",
         },
       });
       document.head.appendChild(ld);
@@ -107,27 +107,27 @@ export function App() {
         mainEntity: [
           {
             q: "¿Es físico o digital?",
-            a: "100% digital. Acceso inmediato para descargar, editar e imprimir.",
+            a: "100% digital. Acceso inmediato para descargar, editar e imprimir desde cualquier dispositivo.",
           },
           {
             q: "¿Necesito experiencia previa?",
-            a: "No. El sistema guía el proceso completo desde el principio.",
+            a: "No. El sistema está diseñado para técnicos, licenciados, supervisores y responsables de HyS en cualquier etapa de su carrera. Si sos nuevo, te da la estructura. Si ya tenés experiencia, te ahorra horas.",
           },
           {
-            q: "¿Sirve para cualquier provincia?",
-            a: "Sí. Los documentos son adaptables a cualquier contexto.",
+            q: "¿Sirve para cualquier provincia o país?",
+            a: "Sí. El contenido está basado en buenas prácticas internacionales y es aplicable en cualquier organización, región o país de habla hispana.",
           },
           {
-            q: "¿Puedo adaptarlo a mis clientes?",
-            a: "Sí. Todos los archivos son editables.",
+            q: "¿Puedo adaptarlo a distintos clientes o empresas?",
+            a: "Sí. Todas las plantillas, checklists y formatos son 100% editables. Podés personalizarlos con el nombre de la empresa, sector, riesgo específico y cualquier dato que necesites.",
           },
           {
             q: "¿Cuándo recibo el acceso?",
-            a: "Inmediatamente después del pago.",
+            a: "Inmediatamente después de tu compra. Recibís el link de descarga en tu correo electrónico en menos de 5 minutos.",
           },
           {
-            q: "¿Ya tengo algunos modelos míos?",
-            a: "Este sistema los complementa y los organiza dentro de un método.",
+            q: "¿Ya tengo algunos modelos propios, me sirve igual?",
+            a: "Sí. El sistema no reemplaza lo que ya usás, lo completa y lo ordena. Vas a encontrar herramientas que te faltan, estructuras que podés mejorar y tiempo que vas a recuperar.",
           },
         ].map((item) => ({
           "@type": "Question",

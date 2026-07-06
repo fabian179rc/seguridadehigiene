@@ -9,7 +9,7 @@ export function SolutionSection() {
             LA SOLUCIÓN — UN SISTEMA TODO EN UNO
           </span>
           <h2 className="font-heading md:text-5xl font-semibold text-white mb-6 max-w-4xl mx-auto text-[28px] leading-tight">
-            El único sistema que organiza todo el proceso de auditoría HyS{" "}
+            El único sistema que organiza todo el proceso de inspecciones HyS{" "}
             <span className="italic text-[#c8d6bd]">de principio a fin.</span>
           </h2>
         </div>
@@ -33,7 +33,7 @@ export function SolutionSection() {
         >
           <img
             src={`${import.meta.env.BASE_URL}mockup.webp`}
-            alt="Sistema Maestro de Auditorías HyS"
+            alt="Sistema Maestro de Inspecciones HyS"
             width={600}
             height={600}
             loading="lazy"
@@ -43,7 +43,7 @@ export function SolutionSection() {
         </motion.div>
 
         <p className="text-[#c8d6bd] font-medium text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-          Sin improvisación. Sin pérdida de datos. Sin empezar desde cero.
+          Sin improvisación. Sin hallazgos sin cerrar. Sin empezar desde cero.
         </p>
       </div>
     </section>

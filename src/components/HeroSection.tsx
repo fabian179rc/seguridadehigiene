@@ -26,7 +26,7 @@ export function HeroSection() {
           }}
           className="inline-flex items-center gap-2 px-4 py-1.5 mb-[22px] md:mb-8 md:px-6 md:py-2.5 rounded-full bg-[#4a553f] text-white font-bold tracking-[0.1em] uppercase text-[10.5px] md:text-[12px] mt-0"
         >
-          ✨ SISTEMA MAESTRO DE AUDITORÍAS HyS
+          ✨ SISTEMA MAESTRO DE INSPECCIONES HyS
         </motion.div>
 
         <motion.h2
@@ -44,7 +44,8 @@ export function HeroSection() {
           }}
           className="font-heading md:text-5xl mb-[35px] md:mb-6 max-w-3xl mx-auto text-[29px] font-semibold leading-[1.2] md:leading-tight text-[#2f3a2c]"
         >
-          Todo lo que necesitás para realizar auditorías profesionales…{" "}
+          Todo lo que necesitás para gestionar inspecciones preventivas de
+          manera profesional…{" "}
           <span className="italic text-[#8a6a4f]">ya está listo.</span>
         </motion.h2>
 
@@ -65,7 +66,7 @@ export function HeroSection() {
         >
           <img
             src={`${import.meta.env.BASE_URL}mockup.webp`}
-            alt="Sistema Maestro de Auditorías HyS"
+            alt="Sistema Maestro de Inspecciones HyS"
             width={800}
             height={800}
             loading="eager"
@@ -120,7 +121,7 @@ export function HeroSection() {
             }}
             className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold px-7 py-[12px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#b85c43]/30 transition-colors mb-[28px] md:mb-6 text-[14.75px] md:text-[20px]"
           >
-            🚀 ¡SI, ACCEDER AL SISTEMA MAESTRO!
+            🚀 ¡SÍ, QUIERO EL SISTEMA MAESTRO!
           </motion.a>
 
           <div className="flex flex-wrap justify-center gap-1.5 md:gap-4 text-[13.25px] md:text-sm font-semibold text-[#4b5347]">

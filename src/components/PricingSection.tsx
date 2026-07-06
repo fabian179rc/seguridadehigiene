@@ -61,7 +61,7 @@ export function PricingSection() {
         <div className="relative inline-block mb-8 w-full max-w-[220px] mx-auto">
           <img
             src={`${import.meta.env.BASE_URL}mockup.webp`}
-            alt="Sistema Maestro de Auditorías HyS"
+            alt="Sistema Maestro de Inspecciones HyS"
             width={400}
             height={400}
             loading="lazy"
@@ -103,7 +103,7 @@ export function PricingSection() {
             Pagás una sola vez. Acceso para siempre.
           </p>
           <p className="text-[#b85c43] font-semibold text-sm mb-8">
-            ⏳ El precio sube al terminar.
+            ⏳ El precio sube al terminar el lanzamiento.
           </p>
 
           <div className="flex justify-center gap-4 mb-8">
@@ -123,7 +123,7 @@ export function PricingSection() {
           </div>
 
           <motion.a
-            href="https://sistema-maestro-de-auditorias-hys.impultienda.ar/checkout"
+            href="https://sistema-maestro-de-inspecciones-hys.impultienda.ar/checkout"
             whileHover={{
               scale: 1.02,
             }}

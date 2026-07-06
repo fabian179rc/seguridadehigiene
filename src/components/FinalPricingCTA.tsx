@@ -9,14 +9,14 @@ export function FinalPricingCTA() {
           ⚡ Última Oportunidad
         </span>
         <h2 className="text-3xl md:text-5xl font-semibold font-heading text-[#2f3a2c] mb-6 leading-tight max-w-3xl mx-auto">
-          Tus auditorías merecen un sistema profesional.
+          Tus inspecciones merecen un sistema profesional.
         </h2>
         <p className="text-lg md:text-xl text-[#4b5347] mb-12 max-w-2xl mx-auto">
-          Un método claro, repetible y listo para usar desde hoy.
+          Un método claro, repetible y documentado — listo para usar desde hoy.
         </p>
 
         <motion.a
-          href="https://sistema-maestro-de-auditorias-hys.impultienda.ar/checkout"
+          href="https://sistema-maestro-de-inspecciones-hys.impultienda.ar/checkout"
           whileHover={{
             scale: 1.02
           }}

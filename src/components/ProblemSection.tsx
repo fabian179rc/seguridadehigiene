@@ -3,18 +3,28 @@ import { motion } from 'framer-motion';
 const situations = [
 {
   emoji: '😰',
-  title: 'Empezás cada auditoría desde cero',
-  desc: 'Checklists, formularios e informes a preparar de nuevo.'
+  title: 'Empezás cada inspección desde cero',
+  desc: 'Checklists, planillas e informes que hay que preparar de nuevo cada vez.'
 },
 {
   emoji: '😩',
-  title: 'Miedo a olvidar un hallazgo',
-  desc: 'Lo que no registraste hoy puede ser un problema mañana.'
+  title: 'Hallazgos que quedan abiertos',
+  desc: 'Lo que no registraste hoy y no tiene seguimiento puede ser un accidente mañana.'
 },
 {
   emoji: '⏱️',
   title: 'Horas perdidas en informes',
-  desc: 'La recorrida dura 1 hora, el informe toda la tarde.'
+  desc: 'La recorrida dura 1 hora. El informe te lleva toda la tarde.'
+},
+{
+  emoji: '📂',
+  title: 'Documentación desordenada',
+  desc: 'Cuando llega una auditoría externa, los papeles están dispersos y nada tiene trazabilidad.'
+},
+{
+  emoji: '📉',
+  title: 'Sin indicadores que demuestren tu gestión',
+  desc: 'Hacés trabajo real pero no podés mostrarlo con datos ni dashboards.'
 }];
 
 export function ProblemSection() {

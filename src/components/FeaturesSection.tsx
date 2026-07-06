@@ -3,16 +3,22 @@ import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 const features = [
 {
-  title: 'Auditorías más profesionales'
+  title: 'Inspecciones planificadas, ordenadas y repetibles'
 },
 {
-  title: 'Informes con respaldo técnico'
+  title: 'Checklists profesionales por sector listos para usar'
 },
 {
-  title: 'Seguimiento real de cada desvío'
+  title: 'Informes técnicos con respaldo y evidencia'
 },
 {
-  title: 'Más tiempo para hacer crecer tu consultora'
+  title: 'Acciones correctivas asignadas, seguidas y cerradas'
+},
+{
+  title: 'Indicadores y dashboards para demostrar tu gestión'
+},
+{
+  title: 'Documentación completa y defendible ante cualquier auditoría'
 }];
 
 export function FeaturesSection() {
