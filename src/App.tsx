@@ -6,7 +6,7 @@ const META_PIXEL_ID = "1656160899010195";
 const PAGE_TITLE =
   "Sistema Maestro de Inspecciones HyS — Sistema Completo para Profesionales de Higiene y Seguridad";
 const PAGE_DESC =
-  "Checklists, formularios, actas, informes, evidencias y planes de acción listos para usar desde el primer día.";
+  "Checklists, informes y seguimiento listos para usar desde el primer día.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}mockup.webp`;
 
 const SITE_URL = "https://maestrodeinspecciones.tupuntodigital.shop";

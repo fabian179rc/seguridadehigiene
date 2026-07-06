@@ -130,10 +130,10 @@ export function PricingSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-3 w-full bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold text-lg md:text-xl px-8 py-6 rounded-full shadow-lg shadow-[#b85c43]/30 transition-colors mb-6"
+            className="flex items-center justify-center gap-3 w-full bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold text-[12px] md:text-xl px-3 md:px-8 py-6 rounded-full shadow-lg shadow-[#b85c43]/30 transition-colors mb-6"
           >
-            <span className="flex items-center gap-2 text-center">
-              🚀 SÍ, QUIERO EL SISTEMA MAESTRO HOY
+            <span className="flex items-center gap-2 text-center whitespace-nowrap">
+              🚀 SÍ, QUIERO MI SISTEMA DE INSPECCION
             </span>
           </motion.a>
 

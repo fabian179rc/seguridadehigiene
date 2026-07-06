@@ -44,9 +44,8 @@ export function HeroSection() {
           }}
           className="font-heading md:text-5xl mb-[35px] md:mb-6 max-w-3xl mx-auto text-[29px] font-semibold leading-[1.2] md:leading-tight text-[#2f3a2c]"
         >
-          Todo lo que necesitás para gestionar inspecciones preventivas de
-          manera profesional…{" "}
-          <span className="italic text-[#8a6a4f]">ya está listo.</span>
+          Cada inspección te roba horas. Eso se termina HOY.{" "}
+          <span className="italic text-[#8a6a4f]">Descargá, abrí y usá..</span>
         </motion.h2>
 
         <motion.div
@@ -91,8 +90,8 @@ export function HeroSection() {
           }}
           className="md:text-xl text-[#4b5347] my-[40px] md:my-10 max-w-2xl mx-auto text-[13.75px] leading-snug md:leading-normal font-medium"
         >
-          Checklists, formularios, actas, informes, evidencias y planes de
-          acción listos para usar desde el primer día.
+          Checklists, informes y seguimiento listos para usar desde el primer
+          día.
         </motion.p>
 
         <motion.div
@@ -119,9 +118,9 @@ export function HeroSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold px-7 py-[12px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#b85c43]/30 transition-colors mb-[28px] md:mb-6 text-[14.75px] md:text-[20px]"
+            className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#b85c43] hover:bg-[#a34f38] text-white font-extrabold px-3 py-[12px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#b85c43]/30 transition-colors mb-[28px] md:mb-6 text-[13.75px] md:text-[20px] whitespace-nowrap"
           >
-            🚀 ¡SÍ, QUIERO EL SISTEMA MAESTRO!
+            🚀 ¡SÍ, QUIERO MI SISTEMA DE INSPECCION!
           </motion.a>
 
           <div className="flex flex-wrap justify-center gap-1.5 md:gap-4 text-[13.25px] md:text-sm font-semibold text-[#4b5347]">

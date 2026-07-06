@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const processes = [
   { icon: "📋", label: "Planificación Anual" },
   { icon: "🔍", label: "Relevamiento en Campo" },
-  { icon: "📸", label: "Registro de Evidencias" },
   { icon: "⚠️", label: "Clasificación de Hallazgos" },
   { icon: "📝", label: "Redacción de Informes" },
   { icon: "📊", label: "Matrices de Riesgo" },
@@ -11,10 +10,7 @@ const processes = [
   { icon: "👷", label: "Orden y Limpieza" },
   { icon: "🏗️", label: "Inspecciones en Obra" },
   { icon: "🔥", label: "Prevención de Incendios" },
-  { icon: "⚡", label: "Riesgo Eléctrico" },
   { icon: "🧯", label: "EPP y Protecciones" },
-  { icon: "📅", label: "Seguimiento de Desvíos" },
-  { icon: "🏭", label: "Industrias y Comercios" },
   { icon: "📈", label: "KPIs y Tableros" },
   { icon: "➕", label: "Y mucho más..." },
 ];
@@ -50,8 +46,8 @@ export function ProcessesSection() {
         </div>
 
         <p className="text-[#4b5347] font-medium max-w-2xl mx-auto">
-          💡 Cada módulo viene con plantillas, checklists y formatos listos
-          para editar y usar de inmediato.
+          💡 Cada módulo viene con plantillas, checklists y formatos listos para
+          usar de inmediato.
         </p>
       </div>
     </section>

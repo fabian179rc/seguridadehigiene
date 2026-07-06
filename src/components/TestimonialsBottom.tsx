@@ -7,28 +7,28 @@ const testimonials = [
   color: 'bg-[#f6d9c4] text-[#2f3a2c]',
   name: 'Lucas M.',
   location: 'Técnico en HyS · Buenos Aires',
-  text: 'Antes armaba el programa de inspecciones en hojas sueltas. Ahora tengo el año planificado, con matrices, cronogramas y seguimiento. No puedo creer que antes funcionaba sin esto.'
+  text: 'Antes armaba el programa en hojas sueltas. Ahora tengo el año planificado, con matrices y seguimiento.'
 },
 {
   initial: 'S',
   color: 'bg-[#cdd9c2] text-[#2f3a2c]',
   name: 'Sofía R.',
   location: 'Licenciada en HyS · Córdoba',
-  text: 'Los checklists por sector solos ya justificaron toda la compra. Entro a cualquier empresa y ya sé exactamente qué recorrer y qué registrar.'
+  text: 'Los checklists por sector solos ya justificaron la compra. Sé exactamente qué recorrer y qué registrar.'
 },
 {
   initial: 'F',
   color: 'bg-[#e6ddc7] text-[#2f3a2c]',
   name: 'Federico T.',
   location: 'Técnico en HyS · Rosario',
-  text: 'Antes el informe me llevaba horas y quedaba irregular. Ahora sigo la estructura del sistema y el informe sale en 30 minutos con evidencia y acciones incluidas.'
+  text: 'Antes el informe me llevaba horas. Ahora sigo la estructura del sistema y sale en 30 minutos, con evidencia incluida.'
 },
 {
   initial: 'V',
   color: 'bg-[#f6d9c4] text-[#2f3a2c]',
   name: 'Valeria B.',
   location: 'Responsable HyS · Mendoza',
-  text: 'Cuando vino la auditoría externa, tenía todo: cronograma, registros, acciones correctivas cerradas, indicadores. Nunca había estado tan preparado.'
+  text: 'Cuando vino la auditoría externa, tenía todo: cronograma, registros e indicadores. Nunca había estado tan preparado.'
 }];
 
 export function TestimonialsBottom() {

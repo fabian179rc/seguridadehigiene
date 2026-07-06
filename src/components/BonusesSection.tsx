@@ -67,7 +67,7 @@ export function BonusesSection() {
             }}
             className="bg-white border border-[#e6ddc7] rounded-2xl overflow-hidden shadow-sm">
 
-              <div className="relative">
+              <div className="relative bg-white">
                 <img
                   src={`${import.meta.env.BASE_URL}${b.image}`}
                   alt={`Bono ${b.num}: ${b.title}`}
@@ -75,7 +75,7 @@ export function BonusesSection() {
                   height={400}
                   loading="lazy"
                   decoding="async"
-                  className="w-full h-56 object-cover object-top" />
+                  className="w-full h-56 object-contain object-top" />
                 <span className="absolute top-3 left-3 bg-[#b85c43] text-white font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full shadow-sm">
                   Bono {b.num}
                 </span>
@@ -84,9 +84,6 @@ export function BonusesSection() {
                 </span>
               </div>
               <div className="p-6">
-                <h3 className="font-bold text-[#2f3a2c] text-lg mb-2">
-                  {b.title}
-                </h3>
                 <p className="text-[#4b5347] text-[15px] leading-relaxed">
                   {b.desc}
                 </p>
