@@ -59,7 +59,7 @@ export function PricingSection() {
           🔥 Oferta de Lanzamiento
         </span>
 
-        <div className="relative inline-block mb-8 w-full max-w-[220px] mx-auto">
+        <div className="relative block mb-8 w-full max-w-[220px] mx-auto">
           <img
             src={`${import.meta.env.BASE_URL}mockup.webp`}
             alt="Sistema Maestro de Inspecciones HyS"
@@ -131,7 +131,7 @@ export function PricingSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-3 w-full bg-[#c06b52] hover:bg-[#a85944] text-white font-extrabold text-[12px] md:text-xl px-3 md:px-8 py-6 rounded-full shadow-lg shadow-[#c06b52]/30 transition-colors mb-6"
+            className="flex items-center justify-center gap-3 w-full bg-[#c06b52] hover:bg-[#a85944] text-white font-extrabold text-[13px] px-3 py-6 rounded-full shadow-lg shadow-[#c06b52]/30 transition-colors mb-6"
           >
             <span className="flex items-center gap-2 text-center whitespace-nowrap">
               🚀 SÍ, QUIERO MI SISTEMA DE INSPECCION
