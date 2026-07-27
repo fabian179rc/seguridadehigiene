@@ -19,8 +19,8 @@ export function FinalPricingCTA() {
           Más orden, más claridad y mejor presentación
         </h2>
         <p className="text-base md:text-lg text-slate-600 mb-8 md:mb-10 max-w-sm md:max-w-2xl mx-auto">
-          Deja de armar cada informe desde cero: el Mega Pack te da el
-          sistema para lograrlo.
+          Deja de armar cada informe desde cero: el Mega Pack te da el sistema
+          para lograrlo.
         </p>
 
         <div className="bg-white border border-[#E4DED0] rounded-3xl p-8 shadow-lg shadow-black/5 max-w-xl mx-auto mb-8">
@@ -37,8 +37,8 @@ export function FinalPricingCTA() {
             USD 29
           </div>
           <p className="text-slate-600 text-base mb-6">
-            O su equivalente en tu moneda local. Incluye el producto
-            principal más los 5 bonos.
+            O su equivalente en tu moneda local. Incluye el producto principal
+            más los 5 bonos.
           </p>
           <motion.a
             href={getCheckoutUrl()}

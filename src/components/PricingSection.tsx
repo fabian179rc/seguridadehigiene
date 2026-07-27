@@ -1,8 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
 export function PricingSection() {
+  const [timeLeft, setTimeLeft] = useState({
+    h: 1,
+    m: 30,
+    s: 0,
+  });
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev.s > 0)
+          return {
+            ...prev,
+            s: prev.s - 1,
+          };
+        if (prev.m > 0)
+          return {
+            ...prev,
+            m: prev.m - 1,
+            s: 59,
+          };
+        if (prev.h > 0)
+          return {
+            ...prev,
+            h: prev.h - 1,
+            m: 59,
+            s: 59,
+          };
+        return prev;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
+  const timeBlocks = [
+    {
+      value: timeLeft.h,
+      label: "Horas",
+    },
+    {
+      value: timeLeft.m,
+      label: "Minutos",
+    },
+    {
+      value: timeLeft.s,
+      label: "Segundos",
+    },
+  ];
+
   return (
     <section
       id="pricing"
@@ -46,8 +92,12 @@ export function PricingSection() {
         className="container mx-auto px-4 max-w-md relative z-10 pb-16 -mt-4 scroll-mt-6"
       >
         <div className="bg-white rounded-3xl shadow-2xl shadow-black/10 p-7 md:p-8 text-center">
-          <p className="text-[#1C2733] text-base md:text-lg mb-4 font-bold">
+          {/* <p className="text-[#1C2733] text-base md:text-lg mb-4 font-bold">
             Mega Pack Higiene y Seguridad Blindada + 5 bonos incluidos
+          </p> */}
+
+          <p className="text-slate-400 text-sm mb-2">
+            Precio Normal: <span className="line-through">USD 97</span>
           </p>
 
           <span className="inline-flex items-center gap-1.5 bg-[#F1E4C8] border border-[#E0CFA0] text-[#8A6A22] text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-3">
@@ -56,12 +106,28 @@ export function PricingSection() {
           <div className="font-heading text-6xl md:text-7xl font-bold text-[#D9643A] leading-none mb-3">
             USD 29
           </div>
-          <p className="text-slate-600 text-[13px] mb-6">
-            O su equivalente en tu moneda local al momento del pago.{" "}
-            <span className="font-bold text-[#1C2733]">
-              Pago único. Sin mensualidades.
-            </span>
+          <span className="inline-block bg-[#E4DED0]/50 text-[#1C2733] text-xs font-semibold px-3 py-1 rounded-full mb-4">
+            Pagas en tu moneda local
+          </span>
+          <p className="text-[#D9643A] font-semibold text-[13px] mb-4">
+            🔥 ¡Última oportunidad! El precio sube al finalizar el contador.
           </p>
+
+          <div className="flex justify-center gap-2 mb-6">
+            {timeBlocks.map((block) => (
+              <div
+                key={block.label}
+                className="bg-[#1C2733] text-white rounded-xl px-3 py-2 min-w-[54px]"
+              >
+                <div className="font-heading text-xl md:text-2xl font-bold leading-none">
+                  {String(block.value).padStart(2, "0")}
+                </div>
+                <div className="text-[8px] tracking-[0.1em] uppercase mt-1 text-white/70">
+                  {block.label}
+                </div>
+              </div>
+            ))}
+          </div>
 
           <motion.a
             href={getCheckoutUrl()}

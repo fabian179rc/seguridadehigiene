@@ -15,13 +15,13 @@ export function GuaranteeSection() {
         </div>
 
         <div className="bg-white/60 border border-[#E4DED0] rounded-3xl p-8 md:p-10 shadow-sm">
-          <h3 className="text-xl font-bold text-[#1C2733] mb-4">
+          {/* <h3 className="text-xl font-bold text-[#1C2733] mb-4">
             Te entregamos exactamente lo que prometemos
-          </h3>
+          </h3> */}
           <p className="text-slate-600 leading-relaxed mb-6">
-            Tienes 7 días para revisar el Mega Pack. Si no corresponde con
-            lo ofrecido, puedes solicitar la devolución según las
-            condiciones de compra.
+            Tienes 7 días para revisar el Mega Pack. Si no corresponde con lo
+            ofrecido, puedes solicitar la devolución según las condiciones de
+            compra.
           </p>
           <div className="inline-flex bg-white px-4 py-2 rounded-full border border-[#E4DED0] text-[#5B6B7A] font-bold text-sm shadow-sm">
             Sin riesgo
