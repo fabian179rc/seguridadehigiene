@@ -12,8 +12,10 @@ import { TestimonialsBottom } from '../components/TestimonialsBottom';
 import { FaqSection } from '../components/FaqSection';
 import { FinalPricingCTA } from '../components/FinalPricingCTA';
 import { Footer } from '../components/Footer';
+import { RecentPurchaseToast } from '../components/RecentPurchaseToast';
 export function Landing() {
   return <main className="min-h-screen bg-transparent">
+      <RecentPurchaseToast />
       <HeroSection />
       <ProblemSection />
       <div className="cv-section">

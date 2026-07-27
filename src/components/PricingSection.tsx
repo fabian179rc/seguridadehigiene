@@ -84,6 +84,18 @@ export function PricingSection() {
             decoding="async"
             className="hidden md:block w-full h-auto object-contain drop-shadow-2xl"
           />
+
+          <div
+            aria-hidden="true"
+            className="absolute top-1 right-1 md:top-4 md:-right-2 rotate-[12deg] z-20 flex flex-col items-center justify-center w-20 h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-[#F5DFA0] via-[#D9A94E] to-[#8A6A22] shadow-lg shadow-black/30 border-2 border-[#FCEFC7]"
+          >
+            <span className="font-heading text-2xl md:text-4xl font-bold leading-none text-[#1C2733]">
+              -70%
+            </span>
+            <span className="text-[7px] md:text-[9px] font-bold uppercase tracking-wider text-[#1C2733] mt-1 text-center leading-tight">
+              Descuento
+            </span>
+          </div>
         </div>
       </div>
 
@@ -137,9 +149,9 @@ export function PricingSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-1.5 sm:gap-2 w-full bg-[#D9643A] hover:bg-[#C1552E] text-white font-bold text-[13px] sm:text-base md:text-lg px-4 sm:px-6 py-6 rounded-full shadow-lg shadow-[#D9643A]/30 transition-colors mb-6"
+            className="flex items-center justify-center gap-1.5 sm:gap-2 w-full bg-[#D9643A] hover:bg-[#C1552E] text-white font-bold text-[13px] sm:text-base md:text-lg px-4 sm:px-6 py-4 md:py-5 rounded-full shadow-lg shadow-[#D9643A]/30 transition-colors mb-6"
           >
-            <span className="flex items-center gap-2 text-center whitespace-nowrap">
+            <span className="flex items-center gap-2 text-center leading-snug">
               🚀 Sí, quiero acceder al Mega Pack ahora
             </span>
             <ArrowRight className="w-5 h-5 flex-shrink-0" />
