@@ -1,5 +1,5 @@
 const CHECKOUT_BASE_URL =
-  'https://mega-pack-higiene-y-seguridad-blindada.impultienda.ar/checkout';
+  'https://mega-pack-hys-blindada.impultienda.ar/checkout';
 
 /**
  * Appends the current page's query string (utm_source, utm_campaign, gclid,

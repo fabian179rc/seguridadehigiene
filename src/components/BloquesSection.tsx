@@ -34,20 +34,20 @@ const modulos = [
 
 export function BloquesSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#f9f8f6]">
+    <section className="py-16 md:py-24 bg-[#F7F6F1]">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-10">
-          <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-5 rounded-full bg-[#4A553F] text-white font-semibold tracking-[0.18em] uppercase text-xs">
+          <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-5 rounded-full bg-[#24405E] text-white font-semibold tracking-[0.18em] uppercase text-xs">
             📦 Qué incluye el Mega Pack
           </span>
-          <h2 className="font-heading font-bold text-[#2f3a2c] text-3xl md:text-5xl leading-tight">
+          <h2 className="font-heading font-bold text-[#1C2733] text-3xl md:text-5xl leading-tight">
             Todo el sistema en{" "}
-            <span className="italic text-[#5C6851]">un solo producto</span>
+            <span className="italic text-[#3B5875]">un solo producto</span>
           </h2>
         </div>
 
         <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-6">
-          <div className="hidden sm:grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] bg-[#4A553F] text-white text-xs font-bold uppercase tracking-wider">
+          <div className="hidden sm:grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] bg-[#24405E] text-white text-xs font-bold uppercase tracking-wider">
             <div className="px-6 py-3">Módulo</div>
             <div className="px-6 py-3">Lo que resuelve</div>
           </div>
@@ -58,9 +58,9 @@ export function BloquesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className={`grid sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] gap-1 sm:gap-0 px-6 py-4 ${i % 2 === 1 ? "bg-[#f9f8f6]" : "bg-white"} ${i !== 0 ? "border-t border-slate-100" : ""}`}
+              className={`grid sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] gap-1 sm:gap-0 px-6 py-4 ${i % 2 === 1 ? "bg-[#F7F6F1]" : "bg-white"} ${i !== 0 ? "border-t border-slate-100" : ""}`}
             >
-              <div className="font-bold text-[#2f3a2c] flex items-center gap-2">
+              <div className="font-bold text-[#1C2733] flex items-center gap-2">
                 <span aria-hidden="true">{m.emoji}</span> {m.modulo}
               </div>
               <div className="text-slate-600 leading-snug">{m.resuelve}</div>

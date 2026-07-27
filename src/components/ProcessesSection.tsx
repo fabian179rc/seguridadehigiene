@@ -24,15 +24,15 @@ const changes = [
 
 export function ProcessesSection() {
   return (
-    <section className="py-12 md:py-16 bg-[#f9f8f6]">
+    <section className="py-12 md:py-16 bg-[#F7F6F1]">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#2f3a2c] mb-4">
+          <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#1C2733] mb-4">
             🔄 Lo que puede cambiar desde la primera semana
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-8">
           {changes.map((c, i) => (
             <motion.div
               key={i}
@@ -50,13 +50,17 @@ export function ProcessesSection() {
               transition={{
                 delay: i * 0.1,
               }}
-              className="bg-white border border-amber-100 p-8 rounded-3xl shadow-sm"
+              className="bg-white border border-[#E4DED0] p-4 md:p-8 rounded-2xl md:rounded-3xl shadow-sm"
             >
-              <div className="text-4xl mb-4">{c.emoji}</div>
-              <h3 className="text-xl font-bold text-[#2f3a2c] mb-3">
-                {c.title}
-              </h3>
-              <p className="text-slate-600 leading-relaxed">{c.desc}</p>
+              <div className="flex flex-row items-center gap-2 md:gap-3 mb-1.5 md:mb-3">
+                <div className="text-2xl md:text-4xl">{c.emoji}</div>
+                <h3 className="text-base md:text-xl font-bold text-[#1C2733]">
+                  {c.title}
+                </h3>
+              </div>
+              <p className="text-sm md:text-base text-slate-600 leading-relaxed">
+                {c.desc}
+              </p>
             </motion.div>
           ))}
         </div>

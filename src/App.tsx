@@ -65,7 +65,7 @@ export function App() {
       "viewport",
       "width=device-width, initial-scale=1, viewport-fit=cover",
     );
-    setMeta("name", "theme-color", "#F9F8F6");
+    setMeta("name", "theme-color", "#F7F6F1");
     setMeta("name", "robots", "index, follow");
     setMeta("property", "og:type", "website");
     setMeta("property", "og:title", PAGE_TITLE);
@@ -98,7 +98,7 @@ export function App() {
           price: "29",
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
-          url: "https://mega-pack-higiene-y-seguridad-blindada.impultienda.ar/checkout",
+          url: "https://mega-pack-hys-blindada.impultienda.ar/checkout",
         },
       });
       document.head.appendChild(ld);

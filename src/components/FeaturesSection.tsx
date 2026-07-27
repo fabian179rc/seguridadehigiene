@@ -26,10 +26,10 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#f9f8f6]">
+    <section className="py-16 md:py-24 bg-[#F7F6F1]">
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="text-center mb-10">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#2f3a2c]">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#1C2733]">
             Con este sistema vas a poder:
           </h2>
         </div>
@@ -54,9 +54,9 @@ export function FeaturesSection() {
               }}
               className="flex items-start gap-3"
             >
-              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 text-[#d4a017]" />
+              <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-1 text-[#C99A3E]" />
               <p className="text-slate-600 leading-relaxed">
-                <span className="font-bold text-[#2f3a2c]">
+                <span className="font-bold text-[#1C2733]">
                   {feature.lead}
                 </span>{" "}
                 — {feature.rest}

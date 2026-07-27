@@ -4,39 +4,36 @@ import { ArrowRight } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
 export function FinalPricingCTA() {
   return (
-    <section className="py-14 md:py-20 bg-[#f9f8f6] text-[#2f3a2c] text-center relative overflow-hidden">
+    <section className="py-14 md:py-20 bg-[#F7F6F1] text-[#1C2733] text-center relative overflow-hidden">
       <div
         aria-hidden="true"
         className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none"
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-[#d4a017]/10 blur-[100px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] rounded-full bg-[#C99A3E]/10 blur-[100px]" />
       </div>
       <div className="container mx-auto px-4 max-w-3xl relative z-10">
-        <span className="inline-block px-6 py-2.5 mb-5 rounded-full bg-[#4A553F] text-white font-semibold tracking-[0.18em] uppercase text-xs">
+        <span className="inline-block px-6 py-2.5 mb-5 rounded-full bg-[#24405E] text-white font-semibold tracking-[0.18em] uppercase text-xs">
           Última Oportunidad
         </span>
-        <h2 className="text-3xl md:text-5xl font-bold font-heading text-[#2f3a2c] mb-6 leading-tight">
-          Tu trabajo profesional merece más orden, más claridad y mejor
-          presentación
+        <h2 className="text-2xl md:text-5xl font-bold font-heading text-[#1C2733] mb-4 md:mb-6 leading-snug md:leading-tight max-w-md md:max-w-2xl mx-auto">
+          Más orden, más claridad y mejor presentación
         </h2>
-        <p className="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
-          Deja de armar cada informe desde cero. El Mega Pack Higiene y
-          Seguridad Blindada te da el sistema que necesitas para trabajar
-          con más orden, entregar con más profesionalismo y hacer crecer
-          tu servicio.
+        <p className="text-base md:text-lg text-slate-600 mb-8 md:mb-10 max-w-sm md:max-w-2xl mx-auto">
+          Deja de armar cada informe desde cero: el Mega Pack te da el
+          sistema para lograrlo.
         </p>
 
-        <div className="bg-white border border-amber-100 rounded-3xl p-8 shadow-lg shadow-black/5 max-w-xl mx-auto mb-8">
-          <span className="inline-block bg-[#4A553F] text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+        <div className="bg-white border border-[#E4DED0] rounded-3xl p-8 shadow-lg shadow-black/5 max-w-xl mx-auto mb-8">
+          <span className="inline-block bg-[#24405E] text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
             🎁 Kit Completo
           </span>
-          <h3 className="font-bold text-[#2f3a2c] mb-4 text-lg md:text-xl">
+          <h3 className="font-bold text-[#1C2733] mb-4 text-lg md:text-xl">
             Mega Pack Higiene y Seguridad Blindada + 5 Bonos Incluidos
           </h3>
           <p className="text-slate-700 font-semibold text-base mb-1">
             Hoy puedes acceder al sistema completo por solo:
           </p>
-          <div className="text-5xl md:text-6xl font-bold text-[#B85C43] mb-3">
+          <div className="text-5xl md:text-6xl font-bold text-[#D9643A] mb-3">
             USD 29
           </div>
           <p className="text-slate-600 text-base mb-6">
@@ -51,7 +48,7 @@ export function FinalPricingCTA() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-2 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-base md:text-lg px-3 py-6 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-2"
+            className="flex items-center justify-center gap-1.5 sm:gap-2 w-full bg-[#D9643A] hover:bg-[#C1552E] text-white font-bold text-[13px] sm:text-base md:text-lg px-4 sm:px-6 py-6 rounded-full shadow-lg shadow-[#D9643A]/30 transition-colors mb-2"
           >
             <span className="text-center whitespace-nowrap">
               🚀 Sí, quiero mi Mega Pack ahora

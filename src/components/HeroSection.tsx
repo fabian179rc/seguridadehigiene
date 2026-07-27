@@ -3,15 +3,32 @@ import { motion } from "framer-motion";
 import { scrollToOffer } from "../utils/scrollToOffer";
 export function HeroSection() {
   return (
-    <section className="relative md:pt-0 md:pb-24 overflow-hidden bg-[#f9f8f6] pt-0 pb-[30px]">
+    <section className="relative md:pt-0 md:pb-24 overflow-hidden bg-[#F7F6F1] pt-0 pb-[30px]">
       <div
         aria-hidden="true"
         className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none"
       >
-        <div className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] rounded-full bg-[#d4a017]/5 blur-3xl" />
+        <div className="absolute -top-[10%] left-1/2 -translate-x-1/2 w-[80%] h-[60%] rounded-full bg-[#C99A3E]/5 blur-3xl" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 max-w-[1100px] text-center pt-0">
+      <div className="container mx-auto px-4 relative z-10 max-w-[1280px] text-center pt-0">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 12,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 0.5,
+          }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 mb-[22px] md:mb-8 md:px-6 md:py-2.5 rounded-full bg-[#24405E] text-white font-bold tracking-[0.1em] uppercase text-[10.5px] md:text-[12px] mt-0"
+        >
+          ✨ Mega Pack Higiene y Seguridad Blindada
+        </motion.div>
+
         <motion.h1
           initial={{
             opacity: 0,
@@ -25,11 +42,12 @@ export function HeroSection() {
             duration: 0.6,
             delay: 0.1,
           }}
-          className="font-heading md:text-5xl mb-[35px] md:mb-6 max-w-3xl mx-auto text-[26px] font-extrabold leading-[1.2] md:leading-tight text-[#2f3a2c]"
+          className="font-heading md:text-4xl mb-[35px] md:mb-6 max-w-3xl md:max-w-6xl mx-auto text-[26px] font-extrabold leading-[1.2] md:leading-tight text-[#1C2733]"
         >
-          ¿Cuántas{" "}
-          <span className="text-[#B85C43]">horas perdiste esta semana</span>{" "}
-          armando documentos que ya deberían estar listos?
+          Tu Gestión de
+          <br />
+          Higiene y Seguridad,
+          <span className="text-[#D9643A]"> Lista. Desde Hoy.</span>
         </motion.h1>
 
         <motion.div
@@ -82,11 +100,12 @@ export function HeroSection() {
             duration: 0.6,
             delay: 0.3,
           }}
-          className="md:text-xl text-slate-600 my-[40px] md:my-10 max-w-2xl mx-auto text-[13.75px] leading-snug md:leading-normal font-medium"
+          className="md:text-lg text-slate-600 my-[40px] md:my-10 max-w-2xl md:max-w-4xl mx-auto text-[13.75px] leading-snug md:leading-normal font-medium"
         >
-          El sistema digital que los profesionales de Higiene y Seguridad
-          usan para organizar su gestión, entregar con profesionalismo y
-          dejar de empezar desde cero — desde el primer día.
+          El sistema digital que los profesionales de Higiene y Seguridad usan
+          para organizar su gestión,
+          <br className="hidden md:block" /> entregar con profesionalismo y
+          dejar de empezar desde cero.
         </motion.p>
 
         <motion.div
@@ -106,7 +125,7 @@ export function HeroSection() {
         >
           {/* <p className="text-slate-700 font-semibold mb-4 text-[15px] md:text-lg">
             Acceso inmediato por solo{" "}
-            <span className="font-extrabold text-[#B85C43]">USD 29</span> —
+            <span className="font-extrabold text-[#D9643A]">USD 29</span> —
             pago único, sin mensualidades.
           </p> */}
 
@@ -119,7 +138,7 @@ export function HeroSection() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#B85C43] hover:bg-[#A34F38] text-white font-extrabold px-6 py-[14px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-[28px] md:mb-6 text-[15px] md:text-[20px] whitespace-nowrap"
+            className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#D9643A] hover:bg-[#C1552E] text-white font-extrabold px-6 py-[14px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#D9643A]/30 transition-colors mb-[28px] md:mb-6 text-[15px] md:text-[20px] whitespace-nowrap"
           >
             🚀 Sí, quiero el Mega Pack ahora
           </motion.a>

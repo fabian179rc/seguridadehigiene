@@ -17,7 +17,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background-color: #f9f8f6;
+  background-color: #F7F6F1;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,16 +26,10 @@ body {
 .font-heading {
   font-family: var(--font-heading);
 }
-/* Skip rendering/painting of off-screen sections to speed up initial load.
-   contain-intrinsic-size reserves space so there is no layout shift (CLS). */
-.cv-section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 600px;
-}
 /* Keyboard focus visibility for accessibility */
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #4A553F;
+  outline: 3px solid #24405E;
   outline-offset: 2px;
   border-radius: 9999px;
 }
