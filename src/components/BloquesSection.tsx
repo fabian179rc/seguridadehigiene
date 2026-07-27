@@ -1,41 +1,35 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, ClipboardList, Search, PenLine, Scale } from 'lucide-react';
-const bloques = [
+const modulos = [
 {
-  num: 'Bloque 1',
-  icon: BookOpen,
-  emoji: '📘',
-  title: 'Manual Maestro de Gestión Administrativa HyS',
-  desc: 'La guía principal para organizar tu gestión profesional, con documentación, protocolos y un plan de implementación en 7 días.'
-},
-{
-  num: 'Bloque 2',
-  icon: ClipboardList,
-  emoji: '📋',
-  title: 'Pack Completo de Formularios de Campo',
-  desc: 'Formularios profesionales para registrar visitas, capacitaciones, entregas de EPP e investigaciones. Listos para usar.'
-},
-{
-  num: 'Bloque 3',
-  icon: Search,
   emoji: '🔍',
-  title: 'Módulo de Auditoría Rápida en Sitio',
-  desc: 'Checklists listos para inspecciones, relevamientos y auditorías, sin olvidarte de ningún detalle.'
+  modulo: 'Diagnóstico y relevamiento',
+  resuelve: 'Llegas a la primera visita con estructura, sin improvisar'
 },
 {
-  num: 'Bloque 4',
-  icon: PenLine,
-  emoji: '✍️',
-  title: 'Modelos de Redacción Técnica',
-  desc: 'Documentos técnicos pre-redactados para completar y utilizar en minutos, sin empezar desde cero.'
+  emoji: '⚠️',
+  modulo: 'Identificación de peligros y riesgos',
+  resuelve: 'Matrices listas para adaptar a cualquier tipo de cliente'
 },
 {
-  num: 'Bloque 5',
-  icon: Scale,
-  emoji: '⚖️',
-  title: 'Blindaje Legal del Profesional HyS',
-  desc: 'La guía práctica para trabajar con respaldo legal, evitar errores y proteger tu responsabilidad profesional.'
+  emoji: '📋',
+  modulo: 'Procedimientos y programas preventivos',
+  resuelve: 'No escribes desde cero — adaptas en minutos'
+},
+{
+  emoji: '🔎',
+  modulo: 'Inspecciones y auditorías internas',
+  resuelve: 'Checklists listos para salir a campo hoy'
+},
+{
+  emoji: '🚨',
+  modulo: 'Incidentes, emergencias y trabajos de riesgo',
+  resuelve: 'Protocolos y formularios claros, completos y editables'
+},
+{
+  emoji: '📊',
+  modulo: 'Entrega profesional al cliente',
+  resuelve: 'Documentos que generan confianza y percepción de valor'
 }];
 
 export function BloquesSection() {
@@ -44,58 +38,41 @@ export function BloquesSection() {
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-10">
           <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-5 rounded-full bg-[#4A553F] text-white font-semibold tracking-[0.18em] uppercase text-xs">
-            📦 5 Bloques Incluidos
+            📦 Qué incluye el Mega Pack
           </span>
           <h2 className="font-heading font-bold text-[#2f3a2c] text-3xl md:text-5xl leading-tight">
             Todo el sistema en{" "}
-            <span className="italic text-[#5C6851]">
-              5 bloques listos para usar
-            </span>
+            <span className="italic text-[#5C6851]">un solo producto</span>
           </h2>
         </div>
 
-        <div className="space-y-5">
-          {bloques.map((b, i) => (
+        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden shadow-sm mb-6">
+          <div className="hidden sm:grid grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] bg-[#4A553F] text-white text-xs font-bold uppercase tracking-wider">
+            <div className="px-6 py-3">Módulo</div>
+            <div className="px-6 py-3">Lo que resuelve</div>
+          </div>
+          {modulos.map((m, i) => (
             <motion.div
               key={i}
-              initial={{
-                opacity: 0,
-                y: 16,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-              }}
-              viewport={{
-                once: true,
-              }}
-              transition={{
-                delay: i * 0.08,
-              }}
-              className="flex items-start gap-5 bg-white border border-slate-200 rounded-2xl p-6 md:p-7 shadow-sm"
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05 }}
+              className={`grid sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] gap-1 sm:gap-0 px-6 py-4 ${i % 2 === 1 ? "bg-[#f9f8f6]" : "bg-white"} ${i !== 0 ? "border-t border-slate-100" : ""}`}
             >
-              <div className="flex-shrink-0 flex flex-col items-center gap-2">
-                <div className="w-14 h-14 rounded-2xl bg-[#f4efe2] border border-amber-100 flex items-center justify-center">
-                  <b.icon className="w-7 h-7 text-[#5C6851]" />
-                </div>
-                <span className="text-[10px] font-bold tracking-[0.15em] uppercase text-[#5C6851]">
-                  {b.num}
-                </span>
+              <div className="font-bold text-[#2f3a2c] flex items-center gap-2">
+                <span aria-hidden="true">{m.emoji}</span> {m.modulo}
               </div>
-              <div>
-                <h3 className="font-heading font-bold text-[#2f3a2c] text-xl md:text-2xl mb-2">
-                  <span aria-hidden="true" className="mr-1">
-                    {b.emoji}
-                  </span>
-                  {b.title}
-                </h3>
-                <p className="text-slate-600 leading-relaxed text-[15px] md:text-base">
-                  {b.desc}
-                </p>
-              </div>
+              <div className="text-slate-600 leading-snug">{m.resuelve}</div>
             </motion.div>
           ))}
         </div>
+
+        <p className="text-center text-slate-500 text-sm max-w-2xl mx-auto">
+          Ideal para profesionales independientes, técnicos, licenciados y
+          consultores de HyS que atienden pymes, comercios, industrias u
+          obras.
+        </p>
       </div>
     </section>
   );

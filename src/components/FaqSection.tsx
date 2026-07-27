@@ -3,28 +3,28 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 const faqs = [
 {
-  q: '¿Es en papel o digital?',
-  a: 'Es un producto 100% digital. Recibís todos los bloques de forma inmediata en tu correo electrónico, con formularios y guías listos para usar e imprimir en casa o en cualquier centro de copiado las veces que necesites.'
+  q: '¿Es un producto físico o digital?',
+  a: 'Es un producto 100% digital. Recibirás el acceso al material después de la compra para descargarlo y usarlo desde tu computadora, tablet o teléfono.'
 },
 {
-  q: '¿Necesito ser experto en administración para usarlo?',
-  a: 'No. Todo el sistema está diseñado para usarse directamente, sin conocimientos previos de gestión administrativa. Si sabés imprimir y completar un formulario, podés usar este sistema desde el primer día.'
+  q: '¿Sirve para cualquier país de Latinoamérica?',
+  a: 'Sí. El contenido está diseñado en términos generales y debe ser adaptado por cada usuario según la normativa vigente de su país, tipo de empresa y actividad.'
 },
 {
-  q: '¿Sirve para profesionales de cualquier provincia de Argentina?',
-  a: 'Sí. Todo el sistema está basado en la normativa nacional vigente: Ley 19.587, Decreto 351/79 y resoluciones de la SRT aplicables en todo el territorio argentino.'
+  q: '¿Necesito ser experto o tener documentos propios para usarlo?',
+  a: 'No. El sistema está pensado para que puedas empezar a usarlo desde el primer día, tanto si estás comenzando como si ya tienes experiencia y quieres ordenar tu gestión.'
 },
 {
-  q: '¿Qué pasa si ya tengo algunos documentos armados?',
-  a: 'Perfecto. El sistema complementa lo que ya tenés. Vas a poder identificar qué falta, reemplazar los modelos incompletos y ordenar todo bajo un mismo sistema coherente y profesional.'
+  q: '¿Cuándo recibo el acceso?',
+  a: 'El acceso es inmediato. Tras completar la compra recibirás los datos para acceder al material.'
 },
 {
-  q: '¿Cuándo recibo el material?',
-  a: 'Inmediatamente después de tu compra. Recibís un correo con el acceso a todos los archivos para descargar en el momento.'
+  q: '¿El precio es en dólares?',
+  a: 'Sí, el precio está en USD. Al momento del pago puedes ver el equivalente en tu moneda local según el método de pago disponible en tu país.'
 },
 {
-  q: '¿Sirve si recién me recibí o si tengo pocos clientes?',
-  a: 'Sí, y es el mejor momento para empezar. Arrancar con el sistema correcto desde el principio te ahorra años de correcciones y te protege desde el primer cliente.'
+  q: '¿Reemplaza la normativa local o incluye asesoría personalizada?',
+  a: 'No. El Mega Pack es una herramienta de organización y documentación profesional. No reemplaza la normativa vigente de cada país ni constituye asesoramiento legal, técnico o laboral.'
 }];
 
 export function FaqSection() {

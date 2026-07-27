@@ -19,15 +19,12 @@ export function GuaranteeSection() {
             Te entregamos exactamente lo que prometemos
           </h3>
           <p className="text-slate-600 leading-relaxed mb-6">
-            Tenés 7 días completos para revisar todo el material y comprobar
-            que es justo lo que te prometimos: un sistema completo, claro y
-            listo para ordenar tu gestión profesional. Si lo que recibís no
-            se corresponde con lo que prometemos, te devolvemos el 100% de tu
-            dinero, sin vueltas y sin formularios complicados. Así de simple:
-            cumplimos o te lo reintegramos.
+            Tienes 7 días para revisar el Mega Pack. Si no corresponde con
+            lo ofrecido, puedes solicitar la devolución según las
+            condiciones de compra.
           </p>
           <div className="inline-flex bg-white px-4 py-2 rounded-full border border-amber-200 text-[#6f7a64] font-bold text-sm shadow-sm">
-            Riesgo Cero Garantizado
+            Sin riesgo
           </div>
         </div>
       </div>

@@ -3,32 +3,25 @@ import { motion } from 'framer-motion';
 import { Star, MessageCircle } from 'lucide-react';
 const testimonials = [
 {
-  initial: 'M',
-  color: 'bg-pink-100 text-pink-700',
-  name: 'Martín G.',
-  location: 'Técnico en HyS — Buenos Aires',
-  text: 'Tenía los formularios de EPP de algunos clientes firmados y de otros no. Con el pack los imprimí todos, los llevé en mi próxima visita y por primera vez siento que tengo el legajo realmente completo. Una tranquilidad enorme.'
-},
-{
   initial: 'C',
+  color: 'bg-pink-100 text-pink-700',
+  name: 'Carlos M.',
+  location: 'Profesional de Higiene y Seguridad',
+  text: 'Antes tenía documentos sueltos para cada cliente. Con el sistema pude ordenar mis visitas, preparar mejor los informes y dejar pendientes mucho más claros.'
+},
+{
+  initial: 'L',
   color: 'bg-blue-100 text-blue-700',
-  name: 'Carolina R.',
-  location: 'Licenciada en HyS — Córdoba',
-  text: 'El modelo de Programa de Seguridad me cambió la vida. Antes me llevaba medio día armar uno desde cero. Ahora lo tengo listo en una hora y con todo lo que la ART necesita ver.'
+  name: 'Laura P.',
+  location: 'Consultora SST',
+  text: 'Lo que más me sirvió fue la estructura para cerrar visitas. Ahora cada hallazgo queda con responsable, fecha y evidencia requerida.'
 },
 {
-  initial: 'D',
+  initial: 'A',
   color: 'bg-emerald-100 text-emerald-700',
-  name: 'Diego T.',
-  location: 'Técnico en HyS — Rosario',
-  text: 'El Bloque de Blindaje Legal solo ya valió todo. Por fin entendí qué firmar, qué no firmar nunca y cómo protegerme cuando el empleador no quiere corregir los desvíos.'
-},
-{
-  initial: 'P',
-  color: 'bg-amber-100 text-amber-700',
-  name: 'Paula B.',
-  location: 'Licenciada en HyS — Mendoza',
-  text: 'Los checklists de auditoría me salvaron en una inspección sorpresa. Tenía todo documentado y ordenado. El inspector se fue sin ninguna observación grave. Nunca me había sentido tan seguro.'
+  name: 'Andrés R.',
+  location: 'Técnico en Seguridad Ocupacional',
+  text: 'Me ayudó a mejorar la forma en que presento mi servicio. El cliente entiende mejor lo que hago y percibe más valor en cada entrega.'
 }];
 
 export function TestimonialsBottom() {
@@ -38,7 +31,7 @@ export function TestimonialsBottom() {
         <div className="text-center mb-12">
           <MessageCircle className="w-10 h-10 text-[#d4a017] mx-auto mb-4" />
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#2f3a2c]">
-            Lo que otros profesionales de HyS están diciendo
+            Lo que dicen otros profesionales de HyS
           </h2>
         </div>
 

@@ -8,11 +8,12 @@ export function Footer() {
         </div>
 
         <p className="text-sm max-w-2xl mx-auto mb-8 leading-relaxed">
-          Este producto es una herramienta de organización y documentación
-          para profesionales de Higiene y Seguridad independientes. No
-          constituye asesoramiento legal, contable ni impositivo, ni
-          reemplaza la consulta con un profesional matriculado en cada
-          materia.
+          El Mega Pack es una herramienta digital de organización y
+          documentación para profesionales de Higiene y Seguridad, SST y
+          Seguridad Ocupacional. Debes adaptarlo a la normativa vigente de
+          tu país y actividad. No constituye asesoramiento legal, contable,
+          laboral ni técnico obligatorio, ni reemplaza a profesionales
+          habilitados o autoridades competentes.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 text-sm mb-8 font-medium">

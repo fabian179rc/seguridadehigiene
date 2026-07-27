@@ -12,23 +12,6 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 max-w-[1100px] text-center pt-0">
-        <motion.div
-          initial={{
-            opacity: 0,
-            y: 12,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 mb-[22px] md:mb-8 md:px-6 md:py-2.5 rounded-full bg-[#4A553F] text-white font-bold tracking-[0.1em] uppercase text-[10.5px] md:text-[12px] mt-0"
-        >
-          ✨ SISTEMA COMPLETO PARA PROFESIONALES DE HIGIENE Y SEGURIDAD
-        </motion.div>
-
         <motion.h1
           initial={{
             opacity: 0,
@@ -44,8 +27,9 @@ export function HeroSection() {
           }}
           className="font-heading md:text-5xl mb-[35px] md:mb-6 max-w-3xl mx-auto text-[26px] font-extrabold leading-[1.2] md:leading-tight text-[#2f3a2c]"
         >
-          Todo lo que necesitás para brindar un servicio de Higiene y
-          Seguridad profesional... ya está listo.
+          ¿Cuántas{" "}
+          <span className="text-[#B85C43]">horas perdiste esta semana</span>{" "}
+          armando documentos que ya deberían estar listos?
         </motion.h1>
 
         <motion.div
@@ -64,6 +48,16 @@ export function HeroSection() {
           className="mb-[18px] md:mb-10 max-w-[400px] md:max-w-2xl mx-auto"
         >
           <img
+            src={`${import.meta.env.BASE_URL}megapack-mockup-mobile.webp`}
+            alt="Mega Pack Higiene y Seguridad Blindada"
+            width={800}
+            height={800}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl md:hidden"
+          />
+          <img
             src={`${import.meta.env.BASE_URL}megapack-mockup.webp`}
             alt="Mega Pack Higiene y Seguridad Blindada"
             width={800}
@@ -71,7 +65,7 @@ export function HeroSection() {
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            className="w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
+            className="hidden md:block w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
           />
         </motion.div>
 
@@ -90,8 +84,9 @@ export function HeroSection() {
           }}
           className="md:text-xl text-slate-600 my-[40px] md:my-10 max-w-2xl mx-auto text-[13.75px] leading-snug md:leading-normal font-medium"
         >
-          Protocolos, informes, matrices, planillas y documentos listos para
-          editar, presentar y utilizar desde el primer día.
+          El sistema digital que los profesionales de Higiene y Seguridad
+          usan para organizar su gestión, entregar con profesionalismo y
+          dejar de empezar desde cero — desde el primer día.
         </motion.p>
 
         <motion.div
@@ -109,6 +104,12 @@ export function HeroSection() {
           }}
           className="flex flex-col items-center"
         >
+          {/* <p className="text-slate-700 font-semibold mb-4 text-[15px] md:text-lg">
+            Acceso inmediato por solo{" "}
+            <span className="font-extrabold text-[#B85C43]">USD 29</span> —
+            pago único, sin mensualidades.
+          </p> */}
+
           <motion.a
             href="#comprar"
             onClick={scrollToOffer}
@@ -120,13 +121,13 @@ export function HeroSection() {
             }}
             className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#B85C43] hover:bg-[#A34F38] text-white font-extrabold px-6 py-[14px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-[28px] md:mb-6 text-[15px] md:text-[20px] whitespace-nowrap"
           >
-            🚀 SÍ, QUIERO EL MEGA PACK
+            🚀 Sí, quiero el Mega Pack ahora
           </motion.a>
 
           <div className="flex flex-wrap justify-center gap-1.5 md:gap-4 text-[13.25px] md:text-sm font-semibold text-slate-600">
             <span>
-              <span aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 — Reseñas
-              verificadas
+              <span aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 — Valoración de
+              usuarios
             </span>
             <span
               aria-hidden="true"
@@ -137,6 +138,16 @@ export function HeroSection() {
             <span>
               <span aria-hidden="true">🛡️</span> Garantía de 7 Días — Riesgo
               Cero
+            </span>
+            <span
+              aria-hidden="true"
+              className="hidden sm:inline text-slate-300"
+            >
+              |
+            </span>
+            <span>
+              <span aria-hidden="true">💻</span> Producto 100% Digital — Acceso
+              Inmediato
             </span>
           </div>
         </motion.div>

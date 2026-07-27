@@ -2,24 +2,24 @@ import React from 'react';
 import { motion } from 'framer-motion';
 const changes = [
 {
-  emoji: '📖',
-  title: 'Legajo Técnico al Día',
-  desc: 'Cada empresa tiene su documentación completa, sus registros firmados y sus vencimientos bajo control. Sin riesgo legal ni papeles perdidos.'
+  emoji: '🧭',
+  title: 'Más claridad en cada visita',
+  desc: 'Sabrás qué revisar, qué registrar y cómo cerrar cada recorrido con mayor orden.'
 },
 {
-  emoji: '📈',
-  title: 'Control Profesional Real',
-  desc: 'Sabés exactamente qué tiene cada cliente, qué está pendiente y qué vence el mes que viene. Sin sorpresas de la SRT ni de la ART.'
+  emoji: '⏱️',
+  title: 'Menos tiempo redactando desde cero',
+  desc: 'Modelos y estructuras listas para adaptar, reduciendo horas de trabajo repetitivo.'
 },
 {
-  emoji: '🕊️',
-  title: 'Tranquilidad Mental',
-  desc: 'Se terminó la sensación de que "algo siempre falta". Tu gestión tiene sistema y vos podés enfocarte en lo que realmente importa: atender más empresas y crecer.'
+  emoji: '📊',
+  title: 'Más control sobre tus clientes',
+  desc: 'Sabrás qué tiene cada cliente, qué falta y qué requiere seguimiento.'
 },
 {
-  emoji: '❤️',
-  title: 'Profesionalismo Visible',
-  desc: 'Cada visita tiene su acta. Cada entrega de EPP tiene su planilla firmada. Cada desvío tiene su notificación. Así se construye una carrera sólida y sin exposición legal.'
+  emoji: '📅',
+  title: 'Seguimiento más ordenado',
+  desc: 'Cada pendiente queda asociado a una acción, responsable y fecha.'
 }];
 
 export function ProcessesSection() {
@@ -28,12 +28,8 @@ export function ProcessesSection() {
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-[#2f3a2c] mb-4">
-            Lo que va a cambiar
+            🔄 Lo que puede cambiar desde la primera semana
           </h2>
-          <p className="text-lg text-slate-600">
-            Lo que va a cambiar en tu gestión profesional desde la primera
-            semana
-          </p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-8">

@@ -4,10 +4,11 @@ import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 const META_PIXEL_ID = "1656160899010195";
 const PAGE_TITLE =
-  "Mega Pack Higiene y Seguridad Blindada — Sistema Completo de Gestión para Profesionales de HyS";
+  "Mega Pack Higiene y Seguridad Blindada — Sistema Completo para Profesionales de Higiene y Seguridad, SST y Seguridad Ocupacional";
 const PAGE_DESC =
-  "Protocolos, informes, matrices, planillas y documentos listos para editar, presentar y utilizar desde el primer día.";
+  "Protocolos, informes, matrices, formularios, checklists, guías y documentos editables para usar desde el primer día en visitas, auditorías, relevamientos, informes y seguimiento de clientes.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}megapack-mockup.webp`;
+const HERO_IMAGE_MOBILE = `${import.meta.env.BASE_URL}megapack-mockup-mobile.webp`;
 
 const SITE_URL = "https://seguridadehigiene.tupuntodigital.shop";
 function setMeta(attr: "name" | "property", key: string, content: string) {
@@ -38,7 +39,7 @@ export function App() {
   useScreenInit();
   useEffect(() => {
     if (typeof document === "undefined") return;
-    document.documentElement.lang = "es-AR";
+    document.documentElement.lang = "es-419";
     document.title = PAGE_TITLE;
     addLink("preconnect", "/cdn.magicpatterns.com", {
       crossorigin: "",
@@ -47,9 +48,15 @@ export function App() {
     addLink("preconnect", "https://fonts.gstatic.com", {
       crossorigin: "",
     });
+    addLink("preload", HERO_IMAGE_MOBILE, {
+      as: "image",
+      fetchpriority: "high",
+      media: "(max-width: 767px)",
+    });
     addLink("preload", HERO_IMAGE, {
       as: "image",
       fetchpriority: "high",
+      media: "(min-width: 768px)",
     });
     addLink("canonical", SITE_URL);
     setMeta("name", "description", PAGE_DESC);
@@ -63,7 +70,7 @@ export function App() {
     setMeta("property", "og:type", "website");
     setMeta("property", "og:title", PAGE_TITLE);
     setMeta("property", "og:description", PAGE_DESC);
-    setMeta("property", "og:locale", "es_AR");
+    setMeta("property", "og:locale", "es_419");
     setMeta("property", "og:image", HERO_IMAGE);
     setMeta("property", "og:url", SITE_URL);
     setMeta("property", "og:site_name", "Mega Pack Higiene y Seguridad Blindada");
@@ -88,8 +95,8 @@ export function App() {
         },
         offers: {
           "@type": "Offer",
-          price: "19990",
-          priceCurrency: "ARS",
+          price: "29",
+          priceCurrency: "USD",
           availability: "https://schema.org/InStock",
           url: "https://mega-pack-higiene-y-seguridad-blindada.impultienda.ar/checkout",
         },
@@ -106,28 +113,28 @@ export function App() {
         "@type": "FAQPage",
         mainEntity: [
           {
-            q: "¿Es en papel o digital?",
-            a: "Es un producto 100% digital. Recibís todos los bloques de forma inmediata en tu correo electrónico, con formularios y guías listos para usar e imprimir en casa o en cualquier centro de copiado las veces que necesites.",
+            q: "¿Es un producto físico o digital?",
+            a: "Es un producto 100% digital. Recibirás el acceso al material después de la compra para descargarlo y usarlo desde tu computadora, tablet o teléfono.",
           },
           {
-            q: "¿Necesito ser experto en administración para usarlo?",
-            a: "No. Todo el sistema está diseñado para usarse directamente, sin conocimientos previos de gestión administrativa. Si sabés imprimir y completar un formulario, podés usar este sistema desde el primer día.",
+            q: "¿Sirve para cualquier país de Latinoamérica?",
+            a: "Sí. El contenido está diseñado en términos generales y debe ser adaptado por cada usuario según la normativa vigente de su país, tipo de empresa y actividad.",
           },
           {
-            q: "¿Sirve para profesionales de cualquier provincia de Argentina?",
-            a: "Sí. Todo el sistema está basado en la normativa nacional vigente: Ley 19.587, Decreto 351/79 y resoluciones de la SRT aplicables en todo el territorio argentino.",
+            q: "¿Necesito ser experto o tener documentos propios para usarlo?",
+            a: "No. El sistema está pensado para que puedas empezar a usarlo desde el primer día, tanto si estás comenzando como si ya tienes experiencia y quieres ordenar tu gestión.",
           },
           {
-            q: "¿Qué pasa si ya tengo algunos documentos armados?",
-            a: "Perfecto. El sistema complementa lo que ya tenés. Vas a poder identificar qué falta, reemplazar los modelos incompletos y ordenar todo bajo un mismo sistema coherente y profesional.",
+            q: "¿Cuándo recibo el acceso?",
+            a: "El acceso es inmediato. Tras completar la compra recibirás los datos para acceder al material.",
           },
           {
-            q: "¿Cuándo recibo el material?",
-            a: "Inmediatamente después de tu compra. Recibís un correo con el acceso a todos los archivos para descargar en el momento.",
+            q: "¿El precio es en dólares?",
+            a: "Sí, el precio está en USD. Al momento del pago puedes ver el equivalente en tu moneda local según el método de pago disponible en tu país.",
           },
           {
-            q: "¿Sirve si recién me recibí o si tengo pocos clientes?",
-            a: "Sí, y es el mejor momento para empezar. Arrancar con el sistema correcto desde el principio te ahorra años de correcciones y te protege desde el primer cliente.",
+            q: "¿Reemplaza la normativa local o incluye asesoría personalizada?",
+            a: "No. El Mega Pack es una herramienta de organización y documentación profesional. No reemplaza la normativa vigente de cada país ni constituye asesoramiento legal, técnico o laboral.",
           },
         ].map((item) => ({
           "@type": "Question",

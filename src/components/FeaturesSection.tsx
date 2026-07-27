@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 const features = [
   {
-    lead: "Respaldo Legal Real",
+    lead: "Ahorrar tiempo en documentación",
     rest:
-      "Documentación completa y organizada para trabajar con mayor seguridad ante inspecciones y auditorías.",
+      "Deja de empezar cada informe desde cero. Usa modelos y guías listas para adaptar.",
   },
   {
-    lead: "Control Total de cada Cliente",
+    lead: "Trabajar con más orden",
     rest:
-      "Toda la información de cada empresa en un solo lugar, siempre actualizada y fácil de encontrar.",
+      "Organiza visitas, pendientes, hallazgos y evidencias con una lógica profesional.",
   },
   {
-    lead: "Tranquilidad Profesional",
+    lead: "Presentarte mejor ante tus clientes",
     rest:
-      "Dejá de crear documentos desde cero y dedicá ese tiempo a conseguir y atender más clientes.",
+      "Entrega documentos más claros y profesionales, aumentando la percepción de valor de tu servicio.",
   },
   {
-    lead: "Orden Sostenible",
+    lead: "Dar seguimiento sin improvisar",
     rest:
-      "Un sistema simple para mantener toda tu gestión organizada durante todo el año.",
+      "Registra responsables, fechas y prioridades para que cada pendiente tenga control.",
   },
 ];
 
@@ -30,7 +30,7 @@ export function FeaturesSection() {
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="text-center mb-10">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-[#2f3a2c]">
-            ¿Qué vas a lograr con este sistema?
+            Con este sistema vas a poder:
           </h2>
         </div>
 

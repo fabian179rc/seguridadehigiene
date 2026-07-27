@@ -5,31 +5,31 @@ const bonuses = [
 {
   num: 1,
   title: 'Kit Express de Primera Visita Segura',
-  desc: 'Todo lo necesario para iniciar un cliente nuevo con orden, documentos y checklists listos para usar.',
+  desc: 'Llegas al cliente con una estructura clara, sin improvisar y sin depender solo de tu memoria.',
   image: "mp-bono1.webp"
 },
 {
   num: 2,
   title: 'Matriz de Documentos Críticos por Tipo de Cliente',
-  desc: 'Guía rápida para saber qué documentación necesita cada tipo de empresa, sin improvisar.',
+  desc: 'Sabes exactamente qué pedir y qué presentar según el rubro. Trabajas con más criterio documental.',
   image: "mp-bono2.webp"
 },
 {
   num: 3,
   title: 'Guía Rápida de Observaciones y Desvíos Profesionales',
-  desc: 'Guía con observaciones y frases modelo para redactar informes técnicos claros, profesionales y con respaldo.',
+  desc: 'Tus informes se ven más claros, más sólidos y más fáciles de defender ante el cliente.',
   image: "mp-bono3.webp"
 },
 {
   num: 4,
   title: 'Checklist de Cierre de Visita y Seguimiento',
-  desc: 'Checklist para cerrar cada visita con orden, registrar pendientes y planificar los próximos pasos.',
+  desc: 'Cada visita termina con responsable, fecha y acción definida. Sin pendientes en el aire.',
   image: "mp-bono4.webp"
 },
 {
   num: 5,
   title: 'Mini Manual de Presentación Profesional del Servicio',
-  desc: 'Guía con frases y scripts para presentar tus servicios con mayor claridad y profesionalismo.',
+  desc: 'Presentas lo que haces con más seguridad y el cliente entiende el valor de tu trabajo.',
   image: "mp-bono5.webp"
 }];
 
@@ -40,11 +40,11 @@ export function BonusesSection() {
         <div className="text-center mb-10">
           <span className="inline-flex items-center gap-2 px-6 py-2.5 mb-5 rounded-full bg-[#4A553F] text-white font-semibold tracking-[0.18em] uppercase text-xs">
             <Gift className="w-4 h-4 text-[#d4a017]" />
-            5 Bonos Incluidos
+            5 Bonos Incluidos — Sin Costo Adicional
           </span>
           <h2 className="font-heading font-bold text-[#2f3a2c] text-3xl md:text-5xl leading-tight">
-            Y además, recibís{" "}
-            <span className="italic text-[#5C6851]">5 bonos de lujo</span>
+            Y además, recibes{" "}
+            <span className="italic text-[#5C6851]">5 bonos prácticos</span>
           </h2>
         </div>
 
@@ -105,7 +105,7 @@ export function BonusesSection() {
             el Mega Pack
           </h3>
           <p className="text-slate-600">
-            Los 5 bonos son gratis con tu compra hoy.
+            Todos los bonos están incluidos en una sola compra.
           </p>
         </div>
       </div>

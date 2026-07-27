@@ -16,24 +16,33 @@ export function FinalPricingCTA() {
           Última Oportunidad
         </span>
         <h2 className="text-3xl md:text-5xl font-bold font-heading text-[#2f3a2c] mb-6 leading-tight">
-          Tu carrera merece funcionar con orden, respaldo y tranquilidad
-          real.
+          Tu trabajo profesional merece más orden, más claridad y mejor
+          presentación
         </h2>
         <p className="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
-          No dejes que el caos documental te siga pesando ni que una
-          inspección te agarre desprotegido. Empezá hoy con un sistema que
-          ya funciona y que podés implementar en menos de una semana.
+          Deja de armar cada informe desde cero. El Mega Pack Higiene y
+          Seguridad Blindada te da el sistema que necesitas para trabajar
+          con más orden, entregar con más profesionalismo y hacer crecer
+          tu servicio.
         </p>
 
         <div className="bg-white border border-amber-100 rounded-3xl p-8 shadow-lg shadow-black/5 max-w-xl mx-auto mb-8">
-          <h3 className="font-bold text-[#2f3a2c] mb-2 text-[12px]">
-            Kit Completo: Mega Pack Higiene y Seguridad Blindada + 5 Bonos
-            GRATIS
+          <span className="inline-block bg-[#4A553F] text-white text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+            🎁 Kit Completo
+          </span>
+          <h3 className="font-bold text-[#2f3a2c] mb-4 text-lg md:text-xl">
+            Mega Pack Higiene y Seguridad Blindada + 5 Bonos Incluidos
           </h3>
-          <div className="text-slate-400 line-through mb-2">$74.940 ARS</div>
-          <div className="text-4xl font-bold text-[#B85C43] mb-6">
-            $19.990 ARS
+          <p className="text-slate-700 font-semibold text-base mb-1">
+            Hoy puedes acceder al sistema completo por solo:
+          </p>
+          <div className="text-5xl md:text-6xl font-bold text-[#B85C43] mb-3">
+            USD 29
           </div>
+          <p className="text-slate-600 text-base mb-6">
+            O su equivalente en tu moneda local. Incluye el producto
+            principal más los 5 bonos.
+          </p>
           <motion.a
             href={getCheckoutUrl()}
             whileHover={{
@@ -42,26 +51,29 @@ export function FinalPricingCTA() {
             whileTap={{
               scale: 0.98,
             }}
-            className="flex items-center justify-center gap-2 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-[13px] px-3 py-6 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-2"
+            className="flex items-center justify-center gap-2 w-full bg-[#B85C43] hover:bg-[#A34F38] text-white font-bold text-base md:text-lg px-3 py-6 rounded-full shadow-lg shadow-[#B85C43]/30 transition-colors mb-2"
           >
             <span className="text-center whitespace-nowrap">
-              🚀 SÍ, QUIERO MI MEGA PACK HOY
+              🚀 Sí, quiero mi Mega Pack ahora
             </span>
             <ArrowRight className="w-5 h-5 flex-shrink-0" />
           </motion.a>
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 text-sm text-slate-500 font-medium">
-          <span>
-            <span aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 — Reseñas
-            verificadas
-          </span>
+        <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-2 sm:gap-4 text-base text-slate-700 font-semibold">
+          <span>⚡ Acceso inmediato</span>
           <span aria-hidden="true" className="hidden sm:inline text-slate-300">
             |
           </span>
-          <span>
-            <span aria-hidden="true">🛡️</span> Garantía de 7 Días — Riesgo Cero
+          <span>💳 Pago único</span>
+          <span aria-hidden="true" className="hidden sm:inline text-slate-300">
+            |
           </span>
+          <span>🛡️ Garantía de 7 días</span>
+          <span aria-hidden="true" className="hidden sm:inline text-slate-300">
+            |
+          </span>
+          <span>Producto digital para profesionales de LATAM</span>
         </div>
       </div>
     </section>
