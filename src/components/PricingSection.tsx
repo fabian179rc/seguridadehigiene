@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
+import { getPricingForCountry } from "../utils/pricingByCountry";
 export function PricingSection() {
+  const [pricing] = useState(() => getPricingForCountry());
   const [timeLeft, setTimeLeft] = useState({
     h: 1,
     m: 30,
@@ -109,17 +111,17 @@ export function PricingSection() {
           </p> */}
 
           <p className="text-slate-400 text-sm mb-2">
-            Precio Normal: <span className="line-through">USD 97</span>
+            Precio Normal: <span className="line-through">{pricing.originalPrice}</span>
           </p>
 
           <span className="inline-flex items-center gap-1.5 bg-[#F1E4C8] border border-[#E0CFA0] text-[#8A6A22] text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-3">
             🔥 Precio especial de lanzamiento
           </span>
-          <div className="font-heading text-6xl md:text-7xl font-bold text-[#D9643A] leading-none mb-3">
-            USD 19
+          <div className="font-heading text-5xl md:text-6xl font-bold text-[#D9643A] leading-none mb-3">
+            {pricing.offerPrice}
           </div>
           <span className="inline-block bg-[#E4DED0]/50 text-[#1C2733] text-xs font-semibold px-3 py-1 rounded-full mb-4">
-            Pagas en tu moneda local
+            {pricing.supportText}
           </span>
           <p className="text-[#D9643A] font-semibold text-[13px] mb-4">
             🔥 ¡Última oportunidad! El precio sube al finalizar el contador.
