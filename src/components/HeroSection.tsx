@@ -125,7 +125,7 @@ export function HeroSection() {
         >
           {/* <p className="text-slate-700 font-semibold mb-4 text-[15px] md:text-lg">
             Acceso inmediato por solo{" "}
-            <span className="font-extrabold text-[#D9643A]">USD 29</span> —
+            <span className="font-extrabold text-[#D9643A]">USD 19</span> —
             pago único, sin mensualidades.
           </p> */}
 

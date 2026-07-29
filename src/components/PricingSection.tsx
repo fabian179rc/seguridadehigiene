@@ -90,7 +90,7 @@ export function PricingSection() {
             className="absolute top-1 right-1 md:top-4 md:-right-2 rotate-[12deg] z-20 flex flex-col items-center justify-center w-20 h-20 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-[#F5DFA0] via-[#D9A94E] to-[#8A6A22] shadow-lg shadow-black/30 border-2 border-[#FCEFC7]"
           >
             <span className="font-heading text-2xl md:text-4xl font-bold leading-none text-[#1C2733]">
-              -70%
+              -80%
             </span>
             <span className="text-[7px] md:text-[9px] font-bold uppercase tracking-wider text-[#1C2733] mt-1 text-center leading-tight">
               Descuento
@@ -116,7 +116,7 @@ export function PricingSection() {
             🔥 Precio especial de lanzamiento
           </span>
           <div className="font-heading text-6xl md:text-7xl font-bold text-[#D9643A] leading-none mb-3">
-            USD 29
+            USD 19
           </div>
           <span className="inline-block bg-[#E4DED0]/50 text-[#1C2733] text-xs font-semibold px-3 py-1 rounded-full mb-4">
             Pagas en tu moneda local

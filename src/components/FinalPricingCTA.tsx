@@ -34,7 +34,7 @@ export function FinalPricingCTA() {
             Hoy puedes acceder al sistema completo por solo:
           </p>
           <div className="text-5xl md:text-6xl font-bold text-[#D9643A] mb-3">
-            USD 29
+            USD 19
           </div>
           <p className="text-slate-600 text-base mb-6">
             O su equivalente en tu moneda local. Incluye el producto principal

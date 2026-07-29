@@ -95,7 +95,7 @@ export function App() {
         },
         offers: {
           "@type": "Offer",
-          price: "29",
+          price: "19",
           priceCurrency: "USD",
           availability: "https://schema.org/InStock",
           url: "https://mega-pack-hys-blindada.impultienda.ar/checkout",
