@@ -102,10 +102,11 @@ export function HeroSection() {
           }}
           className="md:text-lg text-slate-600 my-[40px] md:my-10 max-w-2xl md:max-w-4xl mx-auto text-[13.75px] leading-snug md:leading-normal font-medium"
         >
-          El sistema digital que los profesionales de Higiene y Seguridad usan
-          para organizar su gestión,
-          <br className="hidden md:block" /> entregar con profesionalismo y
-          dejar de empezar desde cero.
+          Presentaciones, evaluaciones, registros, certificados y cronogramas en{" "}
+          <span className="text-[#D9643A] font-semibold">
+            Planillas imprimibles, Excels editables y checklists imprimibles e
+            interactivos.
+          </span>
         </motion.p>
 
         <motion.div
