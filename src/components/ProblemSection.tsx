@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 const situations = [
 {
   emoji: '🗂️',
@@ -53,7 +53,7 @@ export function ProblemSection() {
 
         <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
           {situations.map((item, i) =>
-          <motion.div
+          <m.div
             key={i}
             initial={{
               opacity: 0,
@@ -80,7 +80,7 @@ export function ProblemSection() {
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 {item.desc}
               </p>
-            </motion.div>
+            </m.div>
           )}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
 import { getPricingForCountry } from "../utils/pricingByCountry";
@@ -143,7 +143,7 @@ export function PricingSection() {
             ))}
           </div>
 
-          <motion.a
+          <m.a
             href={getCheckoutUrl()}
             whileHover={{
               scale: 1.02,
@@ -157,7 +157,7 @@ export function PricingSection() {
               🚀 Sí, quiero acceder al Mega Pack ahora
             </span>
             <ArrowRight className="w-5 h-5 flex-shrink-0" />
-          </motion.a>
+          </m.a>
 
           <div className="flex flex-wrap justify-center gap-2 text-base text-slate-700 font-semibold">
             <span>⚡ Acceso inmediato</span>

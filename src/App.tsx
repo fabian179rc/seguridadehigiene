@@ -1,5 +1,5 @@
 import React, { useEffect, createElement } from "react";
-import { MotionConfig } from "framer-motion";
+import { MotionConfig, LazyMotion, domAnimation } from "framer-motion";
 import { Landing } from "./pages/Landing";
 import { useScreenInit } from "./useScreenInit";
 const META_PIXEL_ID = "1656160899010195";
@@ -8,7 +8,6 @@ const PAGE_TITLE =
 const PAGE_DESC =
   "Protocolos, informes, matrices, formularios, checklists, guías y documentos editables para usar desde el primer día en visitas, auditorías, relevamientos, informes y seguimiento de clientes.";
 const HERO_IMAGE = `${import.meta.env.BASE_URL}megapack-mockup.webp`;
-const HERO_IMAGE_MOBILE = `${import.meta.env.BASE_URL}megapack-mockup-mobile.webp`;
 
 const SITE_URL = "https://seguridadehigiene.tupuntodigital.shop";
 function setMeta(attr: "name" | "property", key: string, content: string) {
@@ -41,23 +40,9 @@ export function App() {
     if (typeof document === "undefined") return;
     document.documentElement.lang = "es-419";
     document.title = PAGE_TITLE;
-    addLink("preconnect", "/cdn.magicpatterns.com", {
-      crossorigin: "",
-    });
-    addLink("preconnect", "https://fonts.googleapis.com");
-    addLink("preconnect", "https://fonts.gstatic.com", {
-      crossorigin: "",
-    });
-    addLink("preload", HERO_IMAGE_MOBILE, {
-      as: "image",
-      fetchpriority: "high",
-      media: "(max-width: 767px)",
-    });
-    addLink("preload", HERO_IMAGE, {
-      as: "image",
-      fetchpriority: "high",
-      media: "(min-width: 768px)",
-    });
+    // Preconnects and the hero image preload now live as static <link> tags in
+    // index.html — injecting them here via JS was too late for the browser's
+    // preload scanner to act on before the LCP image request.
     addLink("canonical", SITE_URL);
     setMeta("name", "description", PAGE_DESC);
     setMeta(
@@ -205,8 +190,10 @@ export function App() {
     }
   }, []);
   return (
-    <MotionConfig reducedMotion="user">
-      <Landing />
-    </MotionConfig>
+    <LazyMotion features={domAnimation} strict>
+      <MotionConfig reducedMotion="user">
+        <Landing />
+      </MotionConfig>
+    </LazyMotion>
   );
 }

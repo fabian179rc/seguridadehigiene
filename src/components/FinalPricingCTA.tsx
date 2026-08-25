@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { getCheckoutUrl } from "../utils/checkoutUrl";
 export function FinalPricingCTA() {
@@ -40,7 +40,7 @@ export function FinalPricingCTA() {
             O su equivalente en tu moneda local. Incluye el producto principal
             más los 5 bonos.
           </p>
-          <motion.a
+          <m.a
             href={getCheckoutUrl()}
             whileHover={{
               scale: 1.02,
@@ -54,7 +54,7 @@ export function FinalPricingCTA() {
               🚀 Sí, quiero mi Mega Pack ahora
             </span>
             <ArrowRight className="w-5 h-5 flex-shrink-0" />
-          </motion.a>
+          </m.a>
         </div>
 
         <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-2 sm:gap-4 text-base text-slate-700 font-semibold">

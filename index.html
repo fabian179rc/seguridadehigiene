@@ -1,10 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="es-419">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mega Pack Higiene y Seguridad Blindada</title>
+
+    <!-- Preconnect early so the LCP image and font connections aren't blocked behind JS execution -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Hero (LCP) image: preloaded as static HTML so the browser's preload scanner
+         finds it during HTML parsing instead of waiting for React to mount -->
+    <link
+      rel="preload"
+      as="image"
+      href="/megapack-mockup-mobile.webp"
+      fetchpriority="high"
+      media="(max-width: 767px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/megapack-mockup.webp"
+      fetchpriority="high"
+      media="(min-width: 768px)"
+    />
+
+    <!-- Google Fonts loaded non-blocking (preload + swap to stylesheet on load) -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="root"></div>

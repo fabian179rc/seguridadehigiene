@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 const modulos = [
 {
   emoji: '🔍',
@@ -51,8 +51,8 @@ export function BloquesSection() {
             <div className="px-6 py-3">Módulo</div>
             <div className="px-6 py-3">Lo que resuelve</div>
           </div>
-          {modulos.map((m, i) => (
-            <motion.div
+          {modulos.map((mod, i) => (
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -61,10 +61,10 @@ export function BloquesSection() {
               className={`grid sm:grid-cols-[minmax(0,1.1fr)_minmax(0,1.4fr)] gap-1 sm:gap-0 px-6 py-4 ${i % 2 === 1 ? "bg-[#F7F6F1]" : "bg-white"} ${i !== 0 ? "border-t border-slate-100" : ""}`}
             >
               <div className="font-bold text-[#1C2733] flex items-center gap-2">
-                <span aria-hidden="true">{m.emoji}</span> {m.modulo}
+                <span aria-hidden="true">{mod.emoji}</span> {mod.modulo}
               </div>
-              <div className="text-slate-600 leading-snug">{m.resuelve}</div>
-            </motion.div>
+              <div className="text-slate-600 leading-snug">{mod.resuelve}</div>
+            </m.div>
           ))}
         </div>
 

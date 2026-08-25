@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 const features = [
   {
@@ -36,7 +36,7 @@ export function FeaturesSection() {
 
         <div className="flex flex-col gap-4">
           {features.map((feature, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{
                 opacity: 0,
@@ -61,7 +61,7 @@ export function FeaturesSection() {
                 </span>{" "}
                 — {feature.rest}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

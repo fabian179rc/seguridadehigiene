@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { scrollToOffer } from "../utils/scrollToOffer";
 export function HeroSection() {
   return (
@@ -12,7 +12,7 @@ export function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10 max-w-[1280px] text-center pt-0">
-        <motion.div
+        <m.div
           initial={{
             opacity: 0,
             y: 12,
@@ -27,9 +27,9 @@ export function HeroSection() {
           className="inline-flex items-center gap-2 px-4 py-1.5 mb-[22px] md:mb-8 md:px-6 md:py-2.5 rounded-full bg-[#24405E] text-white font-bold tracking-[0.1em] uppercase text-[10.5px] md:text-[12px] mt-0"
         >
           ✨ Mega Pack Higiene y Seguridad Blindada
-        </motion.div>
+        </m.div>
 
-        <motion.h1
+        <m.h1
           initial={{
             opacity: 0,
             y: 16,
@@ -48,9 +48,9 @@ export function HeroSection() {
           <br />
           Higiene y Seguridad,
           <span className="text-[#D9643A]"> Lista. Desde Hoy.</span>
-        </motion.h1>
+        </m.h1>
 
-        <motion.div
+        <m.div
           initial={{
             opacity: 0,
             scale: 0.96,
@@ -68,8 +68,8 @@ export function HeroSection() {
           <img
             src={`${import.meta.env.BASE_URL}megapack-mockup-mobile.webp`}
             alt="Mega Pack Higiene y Seguridad Blindada"
-            width={800}
-            height={800}
+            width={1024}
+            height={1024}
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -78,16 +78,16 @@ export function HeroSection() {
           <img
             src={`${import.meta.env.BASE_URL}megapack-mockup.webp`}
             alt="Mega Pack Higiene y Seguridad Blindada"
-            width={800}
-            height={800}
+            width={1536}
+            height={1024}
             loading="eager"
             fetchPriority="high"
             decoding="async"
             className="hidden md:block w-full h-auto object-contain drop-shadow-2xl rounded-2xl"
           />
-        </motion.div>
+        </m.div>
 
-        <motion.p
+        <m.p
           initial={{
             opacity: 0,
             y: 16,
@@ -107,9 +107,9 @@ export function HeroSection() {
             Planillas imprimibles, Excels editables y checklists imprimibles e
             interactivos.
           </span>
-        </motion.p>
+        </m.p>
 
-        <motion.div
+        <m.div
           initial={{
             opacity: 0,
             y: 16,
@@ -130,7 +130,7 @@ export function HeroSection() {
             pago único, sin mensualidades.
           </p> */}
 
-          <motion.a
+          <m.a
             href="#comprar"
             onClick={scrollToOffer}
             whileHover={{
@@ -142,7 +142,7 @@ export function HeroSection() {
             className="flex items-center justify-center gap-2 md:gap-3 w-full sm:w-auto bg-[#D9643A] hover:bg-[#C1552E] text-white font-extrabold px-6 py-[14px] md:px-10 md:py-5 rounded-full shadow-lg shadow-[#D9643A]/30 transition-colors mb-[28px] md:mb-6 text-[15px] md:text-[20px] whitespace-nowrap"
           >
             🚀 Sí, quiero el Mega Pack ahora
-          </motion.a>
+          </m.a>
 
           <div className="flex flex-wrap justify-center gap-1.5 md:gap-4 text-[13.25px] md:text-sm font-semibold text-slate-600">
             <span>
@@ -170,7 +170,7 @@ export function HeroSection() {
               Inmediato
             </span>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

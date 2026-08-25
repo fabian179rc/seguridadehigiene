@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Gift } from "lucide-react";
 const bonuses = [
   {
@@ -51,7 +51,7 @@ export function BonusesSection() {
 
         <div className="grid sm:grid-cols-2 gap-5 mb-10">
           {bonuses.map((b, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{
                 opacity: 0,
@@ -89,7 +89,7 @@ export function BonusesSection() {
               <div className="px-2 pb-2">
                 <p className="text-slate-500 text-sm leading-snug">{b.desc}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 

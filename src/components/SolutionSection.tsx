@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 export function SolutionSection() {
   return (
     <section className="py-16 md:py-24 bg-transparent">
@@ -18,7 +18,7 @@ export function SolutionSection() {
           </p>
         </div>
 
-        <motion.div
+        <m.div
           initial={{
             opacity: 0,
             scale: 0.96,
@@ -53,7 +53,7 @@ export function SolutionSection() {
             decoding="async"
             className="hidden md:block w-full h-auto max-w-2xl mx-auto object-contain drop-shadow-2xl"
           />
-        </motion.div>
+        </m.div>
 
         <div className="bg-white/60 border border-[#E4DED0] text-[#1C2733] rounded-3xl p-8 md:p-10 shadow-sm">
           <p className="md:text-xl font-medium text-slate-700 text-[16px]">

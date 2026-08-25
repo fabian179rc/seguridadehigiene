@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 const changes = [
 {
   emoji: '🧭',
@@ -34,7 +34,7 @@ export function ProcessesSection() {
 
         <div className="grid sm:grid-cols-2 gap-4 md:gap-8">
           {changes.map((c, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{
                 opacity: 0,
@@ -61,7 +61,7 @@ export function ProcessesSection() {
               <p className="text-sm md:text-base text-slate-600 leading-relaxed">
                 {c.desc}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 import { Plus, Minus } from 'lucide-react';
 const faqs = [
 {
@@ -73,7 +73,7 @@ export function FaqSection() {
                 </button>
                 <AnimatePresence initial={false}>
                   {isOpen &&
-                  <motion.div
+                  <m.div
                     initial={{
                       height: 0,
                       opacity: 0
@@ -95,7 +95,7 @@ export function FaqSection() {
                       <div className="px-6 md:px-8 pb-6 md:pb-7 -mt-1 text-slate-600 leading-relaxed text-[15px] md:text-base max-w-[58ch]">
                         {faq.a}
                       </div>
-                    </motion.div>
+                    </m.div>
                   }
                 </AnimatePresence>
               </div>);

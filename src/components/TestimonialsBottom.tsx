@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 import { Star, MessageCircle } from 'lucide-react';
 const testimonials = [
 {
@@ -37,7 +37,7 @@ export function TestimonialsBottom() {
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-6">
           {testimonials.map((t, i) =>
-          <motion.div
+          <m.div
             key={i}
             initial={{
               opacity: 0,
@@ -80,7 +80,7 @@ export function TestimonialsBottom() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           )}
         </div>
       </div>

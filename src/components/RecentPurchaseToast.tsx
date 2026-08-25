@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 
 const PRODUCT_NAME = "Mega Pack Higiene y Seguridad Blindada";
 
@@ -75,7 +75,7 @@ export function RecentPurchaseToast() {
     >
       <AnimatePresence>
         {visible && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -24, y: 12 }}
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: -24, y: 12 }}
@@ -108,7 +108,7 @@ export function RecentPurchaseToast() {
             <p className="text-[10px] sm:text-xs text-slate-400 mt-1.5">
               hace {minutesAgo} minutos
             </p>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>
