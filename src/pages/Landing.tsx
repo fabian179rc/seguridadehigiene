@@ -1,5 +1,4 @@
 import React from 'react';
-import { HeroSection } from '../components/HeroSection';
 import { ProblemSection } from '../components/ProblemSection';
 import { SolutionSection } from '../components/SolutionSection';
 import { FeaturesSection } from '../components/FeaturesSection';
@@ -16,7 +15,8 @@ import { RecentPurchaseToast } from '../components/RecentPurchaseToast';
 export function Landing() {
   return <main className="min-h-screen bg-transparent">
       <RecentPurchaseToast />
-      <HeroSection />
+      {/* Hero lives as static markup in index.html, above #root, so it can
+          paint before the JS bundle loads — see the comment there. */}
       <ProblemSection />
       <div className="cv-section">
         <SolutionSection />
