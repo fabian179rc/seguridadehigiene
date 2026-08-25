@@ -68,8 +68,8 @@ export function HeroSection() {
           <img
             src={`${import.meta.env.BASE_URL}megapack-mockup-mobile.webp`}
             alt="Mega Pack Higiene y Seguridad Blindada"
-            width={1024}
-            height={1024}
+            width={900}
+            height={900}
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -78,8 +78,8 @@ export function HeroSection() {
           <img
             src={`${import.meta.env.BASE_URL}megapack-mockup.webp`}
             alt="Mega Pack Higiene y Seguridad Blindada"
-            width={1536}
-            height={1024}
+            width={1300}
+            height={867}
             loading="eager"
             fetchPriority="high"
             decoding="async"
